@@ -5,12 +5,13 @@ using SkiaSharp;
 
 namespace JacksUI
 {
-    internal class Bitmapping
+    public class Bitmapping
     {
         //System.Drawing.Image lot = new Image { Source = "/Resources/Images/lotImage.jpg" };
         //Bitmap lotImage = BitmapFactory.DecodeFile("/Resources/Images/lotImage.jpg");
 
-        SKBitmap lotImage = SKBitmap.Decode("lotImage.jpg");
+     
+        SKBitmap lotImage = SKBitmap.Decode(Constants.villageLotImage);
 
         //Bitmap lotImage = new Bitmap("/Resources/Images/lotImage.jpg");
 
@@ -29,7 +30,7 @@ namespace JacksUI
                 y -= 2;
             }
 
-
+            Console.WriteLine(rValues[0]);
 
             return rValues;
         }
@@ -49,6 +50,8 @@ namespace JacksUI
                 y -= 2;
             }
 
+            Console.WriteLine(gValues[0]);
+
             return gValues;
         }
 
@@ -66,6 +69,8 @@ namespace JacksUI
                 x += 2;
                 y -= 2;
             }
+
+            Console.WriteLine(bValues[0]);
 
             return bValues;
         }

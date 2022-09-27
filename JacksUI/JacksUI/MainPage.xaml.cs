@@ -15,6 +15,12 @@ namespace JacksUI
 
 			double[] colorArr = { 10, 12, 23, 23, 16, 23, 21, 16 };
 
+			Bitmapping bitmapping = new Bitmapping();
+
+			bitmapping.getR();
+			bitmapping.getG();
+			bitmapping.getB();
+
 			CounterBtn.Text = Calculations.ConfidenceInterval(colorArr).ToString();
 
 			SemanticScreenReader.Announce(CounterBtn.Text);
