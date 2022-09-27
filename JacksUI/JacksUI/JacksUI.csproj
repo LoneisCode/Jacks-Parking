@@ -39,8 +39,8 @@
 		<MauiSplashScreen Include="Resources\Splash\stephen.png" Color="#512BD4" BaseSize="128,128" />
 
 		<!-- Images -->
-		<MauiImage Include="Resources\Images\*" />
-		<MauiImage Update="Resources\Images\routes.png" BaseSize="168,208" />
+		<MauiImage Include="Resources\images\*" />
+		<MauiImage Update="Resources\images\routes.png" BaseSize="168,208" />
 
 		<!-- Custom Fonts -->
 		<MauiFont Include="Resources\Fonts\*" />
@@ -51,11 +51,12 @@
 
 	<ItemGroup>
 	  <None Remove="Resources\AppIcon\stephen.png" />
-	  <None Remove="Resources\Images\routes.PNG" />
+	  <None Remove="Resources\images\routes.PNG" />
 	  <None Remove="Resources\Splash\stephen.png" />
 	</ItemGroup>
 
 	<ItemGroup>
+	  <PackageReference Include="Microsoft.Maui.Graphics" Version="6.0.501" />
 	  <PackageReference Include="System.Drawing.Common" Version="6.0.0" />
 	</ItemGroup>
 

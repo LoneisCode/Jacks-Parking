@@ -1,18 +1,24 @@
 ﻿using System;
-using System.Text;
-using System.Drawing;
+//using System.Drawing;
+using Microsoft.Maui.Graphics;
 
 namespace JacksUI
 {
-    internal class Bitmapping
+    public class Bitmapping
     {
         //System.Drawing.Image lot = new Image { Source = "/Resources/Images/lotImage.jpg" };
         //Bitmap lotImage = BitmapFactory.DecodeFile("/Resources/Images/lotImage.jpg");
 
-        Bitmap lotImage = new Bitmap("/Resources/Images/lotImage.jpg");
+        //System.Drawing.Image lot = Image.
+        static Microsoft.Maui.Controls.Image image = new Microsoft.Maui.Controls.Image
+        {
+            Source = ImageSource.FromFile("Resources/images/lot_image.png")
+        };
+
+        static Bitmap lotImage = new(image);
 
         //returns the R values of the diagonal pixels. Hardcoded for one spot.
-        public byte[] getR(int x, int y)
+        public static byte[] getR()
         {
             int x = 2333;
             int y = 2297;
@@ -25,12 +31,12 @@ namespace JacksUI
                 x += 2;
                 y -= 2;
             }
-
+            Console.WriteLine(rValues[0]);
             return rValues;
         }
 
         //returns the G values of the diagonal pixels. Hardcoded for one spot.
-        public byte[] getG()
+        public static byte[] getG()
         {
             int x = 2333;
             int y = 2297;
@@ -43,12 +49,12 @@ namespace JacksUI
                 x += 2;
                 y -= 2;
             }
-
+            Console.WriteLine(gValues[0]);
             return gValues;
         }
 
         //returns the B values of the diagonal pixels. Hardcoded for one spot.
-        public byte[] getB()
+        public static byte[] getB()
         {
             int x = 2333;
             int y = 2297;
@@ -61,7 +67,7 @@ namespace JacksUI
                 x += 2;
                 y -= 2;
             }
-
+            Console.WriteLine(bValues[0]);
             return bValues;
         }
     }

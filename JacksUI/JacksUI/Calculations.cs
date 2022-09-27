@@ -2,7 +2,7 @@
 
 namespace JacksUI
 {
-    internal class Calculations
+    public class Calculations
     {
         //Input: Array of Red values, Array of Blue values, or Array of Green values
         //Output: Population Standard Deviation
@@ -13,7 +13,7 @@ namespace JacksUI
 
         }
 
-        public static double[] ConfidenceInterval(double[] colorArr)
+        public static String ConfidenceInterval(double[] colorArr)
         {
             double[] result = new double[2];
             double mean = colorArr.Average();
@@ -25,7 +25,7 @@ namespace JacksUI
             result[0] = lowerBound;
             result[1] = upperBound;
 
-            return result;
+            return lowerBound + ", " + upperBound;
         }
     }
 }
