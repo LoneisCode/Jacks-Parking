@@ -13,7 +13,9 @@
             118, 86, 254, 244, 50, 117, 31, 79, 110, 141, 154, 92, 109, 69, 152, 138, 120, 220, 127, 205, 240,
             163, 107, 219, 51, 181, 32, 84, 79, 32};
 
-        public static double colorArrAverage = colorArr.Average();
-        
+        public static double colorArrAverage = colorArr.Average(); //126.83
+        public static double expectedStandardDeviation = 78.8171371;
+        public static double expectedLowerBound = 112.4373761;
+        public static double expectedUpperBound = 141.2226239;
     }
 }
