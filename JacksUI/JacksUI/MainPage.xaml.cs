@@ -21,7 +21,7 @@ namespace JacksUI
 			bitmapping.getG();
 			bitmapping.getB();
 
-			CounterBtn.Text = Calculations.ConfidenceInterval(colorArr).ToString();
+			CounterBtn.Text = Calculations.confidenceInterval(colorArr).ToString();
 
 			SemanticScreenReader.Announce(CounterBtn.Text);
 		}
