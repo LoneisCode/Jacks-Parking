@@ -2,7 +2,7 @@
 
 namespace JacksUI
 {
-    internal class Calculations
+    public class Calculations
     {
         //Input: Array of Red values, Array of Blue values, or Array of Green values
         //Output: Population Standard Deviation
