@@ -1,6 +1,5 @@
 ﻿using System;
-//using System.Drawing;
-using Microsoft.Maui.Graphics;
+using System.Drawing;
 
 namespace JacksUI
 {
@@ -10,12 +9,13 @@ namespace JacksUI
         //Bitmap lotImage = BitmapFactory.DecodeFile("/Resources/Images/lotImage.jpg");
 
         //System.Drawing.Image lot = Image.
-        static Microsoft.Maui.Controls.Image image = new Microsoft.Maui.Controls.Image
-        {
-            Source = ImageSource.FromFile("Resources/images/lot_image.png")
-        };
+        //static Microsoft.Maui.Controls.Image image = new Microsoft.Maui.Controls.Image
+        //{
+         //   Source = ImageSource.FromFile("Resources/images/lot_image.png")
+       // };
 
-        static Bitmap lotImage = new(image);
+        static Bitmap lotImage = new Bitmap("Resources/images/lot_image.png");
+
 
         //returns the R values of the diagonal pixels. Hardcoded for one spot.
         public static byte[] getR()
