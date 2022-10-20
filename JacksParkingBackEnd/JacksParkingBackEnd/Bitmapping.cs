@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Drawing;
 
-namespace JacksUI
-{
     public class Bitmapping
     {
         //System.Drawing.Image lot = new Image { Source = "/Resources/Images/lotImage.jpg" };
@@ -71,4 +69,3 @@ namespace JacksUI
             return bValues;
         }
     }
-}
