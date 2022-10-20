@@ -10,8 +10,8 @@ namespace JacksUI
         //System.Drawing.Image lot = new Image { Source = "/Resources/Images/lotImage.jpg" };
         //Bitmap lotImage = BitmapFactory.DecodeFile("/Resources/Images/lotImage.jpg");
 
-     
-        SKBitmap lotImage = SKBitmap.Decode(Constants.villageLotImage);
+        static SKImage myImage = SkiaSharp.SKImage.FromEncodedData(Constants.villageLotImage);
+        SKBitmap lotImage = SKBitmap.FromImage(myImage);
 
         //Bitmap lotImage = new Bitmap("/Resources/Images/lotImage.jpg");
 
