@@ -16,6 +16,7 @@ namespace JacksParkingBackEnd
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
+            Bitmapping.getR();
         }
 
         public IConfiguration Configuration { get; }

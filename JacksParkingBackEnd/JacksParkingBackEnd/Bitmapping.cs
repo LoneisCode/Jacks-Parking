@@ -18,18 +18,19 @@ using System.Drawing;
         //returns the R values of the diagonal pixels. Hardcoded for one spot.
         public static byte[] getR()
         {
-            int x = 2333;
-            int y = 2297;
-            byte[] rValues = new byte[120];
+            int x = 308;//2333;
+            int y = 292;//2297;
+            byte[] rValues = new byte[30];
 
-            for (int i = 0; i < 120; i++)
+            for (int i = 0; i < 30; i++)
             {
                 System.Drawing.Color c = lotImage.GetPixel(x, y);
                 rValues[i] = c.R;
-                x += 2;
-                y -= 2;
+                x += 1;
+                y -= 1;
             }
-            Console.WriteLine(rValues[0]);
+            //Console.WriteLine(rValues[0]);
+            System.Diagnostics.Debug.WriteLine(rValues[0]);
             return rValues;
         }
 
