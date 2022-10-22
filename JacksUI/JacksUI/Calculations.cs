@@ -8,24 +8,39 @@ namespace JacksUI
         //Output: Population Standard Deviation
         public static double standardDeviation(double[] colorArr, double mean)
         {
-            double sum = colorArr.Sum(d => Math.Pow(d - mean, 2));
-            return Math.Sqrt((sum) / colorArr.Count());
-
+            try
+            {
+                double sum = colorArr.Sum(d => Math.Pow(d - mean, 2));
+                double unroundedResult = Math.Sqrt((sum) / colorArr.Count());
+                return Math.Round(unroundedResult, 7);
+            }
+            catch (ArgumentNullException e) {
+                Console.WriteLine(e.Message);
+            }
+            return -1;
         }
 
-        public static String ConfidenceInterval(double[] colorArr)
+        public static double[] confidenceInterval(double[] colorArr)
         {
             double[] result = new double[2];
-            double mean = colorArr.Average();
-            int sampleSize = colorArr.Length - 1;
-            double sd = standardDeviation(colorArr, mean);
-            double lowerBound = mean - (Constants.confidenceLevel_99 * (sd / Math.Sqrt(sampleSize)));
-            double upperBound = mean + (Constants.confidenceLevel_99 * (sd / Math.Sqrt(sampleSize)));
+            try
+            {
+                double mean = colorArr.Average();
+                int sampleSize = colorArr.Length - 1;
+                double sd = standardDeviation(colorArr, mean);
+                double lowerBound = mean - (Constants.confidenceLevel_99 * (sd / Math.Sqrt(sampleSize)));
+                double upperBound = mean + (Constants.confidenceLevel_99 * (sd / Math.Sqrt(sampleSize)));
 
-            result[0] = lowerBound;
-            result[1] = upperBound;
+                result[0] = Math.Round(lowerBound, 7);
+                result[1] = Math.Round(upperBound, 7);
 
-            return lowerBound + ", " + upperBound;
+                return result;
+            }
+            catch (ArgumentNullException e) {
+                Console.WriteLine("RBG array is null or value at index i is null.");
+                Console.WriteLine(e.Message);
+            }
+            return null;
         }
     }
 }
