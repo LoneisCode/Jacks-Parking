@@ -8,6 +8,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using System.Drawing;
 
 namespace JacksParkingBackEnd
 {
@@ -16,7 +17,14 @@ namespace JacksParkingBackEnd
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
-            Bitmapping.getR();
+            ParkingSpot[] vSpots = new ParkingSpot[3];
+            vSpots[0] = new ParkingSpot(379, 328, 362, 356); //empty
+            vSpots[1] = new ParkingSpot(513, 323, 519, 356); //red car
+            vSpots[2] = new ParkingSpot(215, 325, 169, 357); //white challenger with silver hood
+            Bitmap Village = new Bitmap("Resources/images/lot_image.png");
+            ParkingLot village = new ParkingLot("Resources/images/lot_image.png", vSpots, Village);
+            
+
         }
 
         public IConfiguration Configuration { get; }

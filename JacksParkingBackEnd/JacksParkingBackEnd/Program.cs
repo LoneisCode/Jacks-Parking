@@ -15,8 +15,6 @@ namespace JacksParkingBackEnd
         {
             //creates the application
             CreateHostBuilder(args).Build().Run();
-            byte[] temp = Bitmapping.getR();
-            Console.WriteLine("hello world");
         }
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>

@@ -1,30 +1,32 @@
-﻿using System;
+﻿using JacksParkingBackEnd;
+using System;
 using System.Drawing;
 
     public class Bitmapping
     {
-        //System.Drawing.Image lot = new Image { Source = "/Resources/Images/lotImage.jpg" };
-        //Bitmap lotImage = BitmapFactory.DecodeFile("/Resources/Images/lotImage.jpg");
-
-        //System.Drawing.Image lot = Image.
-        //static Microsoft.Maui.Controls.Image image = new Microsoft.Maui.Controls.Image
-        //{
-         //   Source = ImageSource.FromFile("Resources/images/lot_image.png")
-       // };
-
-        static Bitmap lotImage = new Bitmap("Resources/images/lot_image.png");
-
+        //static Bitmap lotImage = new Bitmap("Resources/images/lot_image.png");
+       /* ParkingLot[] lots;
+        Bitmap[] bitmaps;
+        Bitmapping(ParkingLot[] lots, Bitmap[] bitmaps)
+        {
+            this.lots = lots;
+            //generating bitmaps for each lot
+            for(int i = 0; i < bitmaps.Length; i++)
+            {
+                bitmaps[i] = new Bitmap(lots[i].getImagePath());
+            }
+        } */
 
         //returns the R values of the diagonal pixels. Hardcoded for one spot.
-        public static byte[] getR()
+        public static byte[] getR(Bitmap lot, int topX, int topY, int bottomX, int bottomY, int length)
         {
-            int x = 308;//2333;
-            int y = 292;//2297;
-            byte[] rValues = new byte[30];
+            //int x = 308;//2333;
+            //int y = 292;//2297;
+            byte[] rValues = new byte[length];
 
-            for (int i = 0; i < 30; i++)
+            for (int i = 0; i < length; i++)
             {
-                System.Drawing.Color c = lotImage.GetPixel(x, y);
+                Color c = lotImage.GetPixel(x, y);
                 rValues[i] = c.R;
                 x += 1;
                 y -= 1;
@@ -35,7 +37,7 @@ using System.Drawing;
         }
 
         //returns the G values of the diagonal pixels. Hardcoded for one spot.
-        public static byte[] getG()
+        public static byte[] getG(int topX, int topY, int bottomX, int bottomY, int length)
         {
             int x = 2333;
             int y = 2297;
@@ -53,7 +55,7 @@ using System.Drawing;
         }
 
         //returns the B values of the diagonal pixels. Hardcoded for one spot.
-        public static byte[] getB()
+        public static byte[] getB(int topX, int topY, int bottomX, int bottomY, int length)
         {
             int x = 2333;
             int y = 2297;
