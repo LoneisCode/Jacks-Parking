@@ -1,17 +1,20 @@
 ﻿using System;
+using System.Transactions;
 
 namespace JacksParkingBackEnd
 {
-    public class ParkingSpot : ParkingSpotInterface
+    public class ParkingSpot
     {
         private int topX;
         private int topY;
         private int bottomX;
         private int bottomY;
         private int length;
+        private int slope;
         private byte[] red;
         private byte[] green;
         private byte[] blue;
+        Bitmapping lot;
 
         public ParkingSpot(int topX, int topY, int bottomX, int bottomY)
         {
@@ -20,11 +23,16 @@ namespace JacksParkingBackEnd
             this.topY = topY;
             this.bottomX = bottomX;
             this.length = (int)Math.Sqrt(Math.Pow((double)(topX - bottomX), 2) + Math.Pow((double)(topY - bottomY), 2)); //distance formula
+            this.slope = (topY - bottomY) / (topX - bottomX);
             this.red = Bitmapping.getR();
             this.blue = Bitmapping.getB();
             this.green = Bitmapping.getG();
         }
 
+        public void requestBitmap()
+        {
+            this.lot = 
+        }
 
         public int getBottomX()
         {

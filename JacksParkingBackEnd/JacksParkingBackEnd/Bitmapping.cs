@@ -18,15 +18,15 @@ using System.Drawing;
         } */
 
         //returns the R values of the diagonal pixels. Hardcoded for one spot.
-        public static byte[] getR(Bitmap lot, int topX, int topY, int bottomX, int bottomY, int length)
+        public static byte[] getR(Bitmap lot, int topX, int topY, int bottomX, int bottomY, int length, int slope)
         {
-            //int x = 308;//2333;
-            //int y = 292;//2297;
+            int x = bottomX;//2333;
+            int y = bottomY;//2297;
             byte[] rValues = new byte[length];
-
+            
             for (int i = 0; i < length; i++)
             {
-                Color c = lotImage.GetPixel(x, y);
+                Color c = lot.GetPixel(x, y);
                 rValues[i] = c.R;
                 x += 1;
                 y -= 1;

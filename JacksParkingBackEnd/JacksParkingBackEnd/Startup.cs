@@ -17,6 +17,8 @@ namespace JacksParkingBackEnd
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
+
+
             ParkingSpot[] vSpots = new ParkingSpot[3];
             vSpots[0] = new ParkingSpot(379, 328, 362, 356); //empty
             vSpots[1] = new ParkingSpot(513, 323, 519, 356); //red car

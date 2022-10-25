@@ -1,5 +1,5 @@
 ﻿using System;
-
+using System.Drawing;
 
 namespace JacksParkingBackEnd
 {
@@ -7,5 +7,6 @@ namespace JacksParkingBackEnd
     {
 
         public String getImagePath();
+        public Bitmap GetBitmap();
     }
 }

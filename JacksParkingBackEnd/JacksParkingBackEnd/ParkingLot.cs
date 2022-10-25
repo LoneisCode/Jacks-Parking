@@ -2,7 +2,7 @@
 
 namespace JacksParkingBackEnd
 {
-    public class ParkingLot : ParkingLotInterface
+    public class ParkingLot
     {
         private ParkingSpot[] spots;
         private string imagePath; //this will be the stream or something later
@@ -14,6 +14,7 @@ namespace JacksParkingBackEnd
             this.imagePath = imagePath;
             this.spots = spots;
             this.lot = lot;
+            
         }
 
         public string getImagePath()
@@ -21,5 +22,9 @@ namespace JacksParkingBackEnd
             return imagePath;
         }
 
+        public Bitmap GetBitmap()
+        {
+            return lot;
+        }
     }
 }
