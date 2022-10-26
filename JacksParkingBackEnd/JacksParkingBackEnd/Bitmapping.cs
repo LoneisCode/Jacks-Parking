@@ -18,16 +18,16 @@ using System.Drawing;
         } */
 
         //returns the R values of the diagonal pixels. Hardcoded for one spot.
-        public static byte[] getR(Bitmap lot, int topX, int topY, int bottomX, int bottomY, int length, int slope)
+        public static double[] getR(Bitmap lot, int topX, int topY, int bottomX, int bottomY, int length, int slope)
         {
             int x = bottomX;//2333;
             int y = bottomY;//2297;
-            byte[] rValues = new byte[length];
+            double[] rValues = new double[length];
             
             for (int i = 0; i < length; i++)
             {
                 Color c = lot.GetPixel(x, y);
-                rValues[i] = c.R;
+                rValues[i] = (double)c.R;
                 x += 1;
                 y -= 1;
             }
@@ -37,11 +37,11 @@ using System.Drawing;
         }
 
         //returns the G values of the diagonal pixels. Hardcoded for one spot.
-        public static byte[] getG(int topX, int topY, int bottomX, int bottomY, int length)
+        public static double[] getG(int topX, int topY, int bottomX, int bottomY, int length)
         {
             int x = 2333;
             int y = 2297;
-            byte[] gValues = new byte[120];
+            double[] gValues = new double[120];
 
             for (int i = 0; i < 120; i++)
             {

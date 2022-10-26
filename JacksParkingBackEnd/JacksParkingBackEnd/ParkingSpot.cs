@@ -14,7 +14,7 @@ namespace JacksParkingBackEnd
         private byte[] red;
         private byte[] green;
         private byte[] blue;
-        Bitmapping lot;
+        Bitmap lot;
 
         public ParkingSpot(int topX, int topY, int bottomX, int bottomY)
         {
