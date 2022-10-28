@@ -23,7 +23,7 @@ namespace JacksUI
 
         public static double[] confidenceInterval(double[] colorArr)
         {
-            double[] result = new double[2];
+            double[] result = new double[2]; 
             try
             {
                 double mean = colorArr.Average();
@@ -41,6 +41,28 @@ namespace JacksUI
                 Console.WriteLine("RBG array is null or value at index i is null.");
                 Console.WriteLine(e.Message);
             }
+            return null;
+        }
+
+        public static bool? IsAvailable(double[] standardOfComparison, double[] colorArray) {
+            try
+            {
+                double mean = colorArray.Average();
+                double lowerBound = standardOfComparison[0];
+                double upperBound = standardOfComparison[1];
+                if ((mean >= lowerBound) && (mean <= upperBound))
+                {
+                    System.Diagnostics.Debug.WriteLine("true");
+                    return true;
+                }
+            }
+            catch (ArgumentNullException e)
+            {
+                Console.WriteLine("RBG array is null or value at index i is null.");
+                Console.WriteLine(e.Message);
+            }
+
+            System.Diagnostics.Debug.WriteLine("false");
             return null;
         }
     }

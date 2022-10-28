@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Drawing;
 using System.Transactions;
 
 namespace JacksParkingBackEnd
@@ -24,14 +25,6 @@ namespace JacksParkingBackEnd
             this.bottomX = bottomX;
             this.length = (int)Math.Sqrt(Math.Pow((double)(topX - bottomX), 2) + Math.Pow((double)(topY - bottomY), 2)); //distance formula
             this.slope = (topY - bottomY) / (topX - bottomX);
-            this.red = Bitmapping.getR();
-            this.blue = Bitmapping.getB();
-            this.green = Bitmapping.getG();
-        }
-
-        public void requestBitmap()
-        {
-            this.lot = 
         }
 
         public int getBottomX()
