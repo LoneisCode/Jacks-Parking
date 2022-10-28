@@ -15,6 +15,17 @@ namespace JacksParkingBackEnd
             this.spots = spots;
             this.lot = lot;
             
+            
+        }
+
+        public void setRGB()
+        {
+            for (int i = 0; i < this.spots.Length; i++)
+            {
+                spots[i].setR(Bitmapping.getR(spots[i], lot)); //Red
+                //Green
+                //Blue
+            }
         }
 
         public string getImagePath()

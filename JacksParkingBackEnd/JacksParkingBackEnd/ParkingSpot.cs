@@ -10,10 +10,12 @@ namespace JacksParkingBackEnd
         private int bottomX;
         private int bottomY;
         private int length;
-        private int slope;
+        private double slope;
+        private double b;
         private double[] red;
         private double[] green;
         private double[] blue;
+
 
         public ParkingSpot(int topX, int topY, int bottomX, int bottomY)
         {
@@ -23,6 +25,7 @@ namespace JacksParkingBackEnd
             this.bottomX = bottomX;
             this.length = (int)Math.Sqrt(Math.Pow((double)(topX - bottomX), 2) + Math.Pow((double)(topY - bottomY), 2)); //distance formula
             this.slope = (topY - bottomY) / (topX - bottomX);
+            this.b = (this.topY) / (this.slope * this.topX);
         }
 
         public void setR(double[] red)
@@ -65,18 +68,28 @@ namespace JacksParkingBackEnd
             return this.length;
         }
 
-        public byte[] getRed()
+        public double[] getRed()
         {
             return this.red;
         }
 
-        public byte[] getBlue()
+        public double[] getBlue()
         {
             return this.blue;
         }
-        public byte[] getGreen()
+        public double[] getGreen()
         {
             return this.green;
+        }
+
+        public double getSlope()
+        {
+            return this.slope;
+        }
+
+        public double getB()
+        {
+            return this.b;
         }
 
     }
