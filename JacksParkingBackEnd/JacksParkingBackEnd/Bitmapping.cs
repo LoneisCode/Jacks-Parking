@@ -27,7 +27,7 @@ using System.Drawing;
             for (int i = 0; i < length; i++)
             {
                 Color c = lot.GetPixel(x, y);
-                rValues[i] = (double)c.R;
+                rValues[i] = c.R;
                 x += 1;
                 y -= 1;
             }
