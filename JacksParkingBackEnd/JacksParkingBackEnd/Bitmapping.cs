@@ -20,9 +20,6 @@ using System.Drawing;
         //returns the R values of the diagonal pixels. Iterates over the x coordinate 
         public static double[] getR(ParkingSpot spot, Bitmap lot){//Bitmap lot, int topX, int topY, int bottomX, int bottomY, int length, int slope)
         {
-            //int x = bottomX;//2333;
-            //int y = bottomY;//2297;
-
             //setting the starting pixel (bottom left corner)
             int x = spot.getBottomX(); //being int, pixels will be somewhat off of diagonal but should be good enough
             int y = spot.getBottomY();
