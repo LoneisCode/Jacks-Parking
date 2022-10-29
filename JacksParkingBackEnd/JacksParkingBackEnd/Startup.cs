@@ -9,6 +9,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Drawing;
+using JacksUI;
 
 namespace JacksParkingBackEnd
 {
@@ -25,7 +26,12 @@ namespace JacksParkingBackEnd
             vSpots[2] = new ParkingSpot(215, 325, 169, 357); //white challenger with silver hood
             Bitmap Village = new Bitmap("Resources/images/lot_image.png");
             ParkingLot village = new ParkingLot("Resources/images/lot_image.png", vSpots, Village);
-            
+
+
+            //Glenn Test
+            double[] rValues = Bitmapping.getR(Village, 379, 328, 362, 356, vSpots[0].getLength(), 0);
+            double[] standardOfComparison = Calculations.confidenceInterval(rValues);
+            Calculations.IsAvailable(standardOfComparison, rValues);
 
         }
 
