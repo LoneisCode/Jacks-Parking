@@ -4,9 +4,14 @@
              x:Class="JacksUI.InteractiveMap"
              xmlns:local="clr-namespace:JacksUI">
     <AbsoluteLayout VerticalOptions="Center" HorizontalOptions="Center">
-        <local:PanContainer HeightRequest="900" WidthRequest="400">
-            <Image Source="campus_map_reduced" HeightRequest="1700" WidthRequest="1100"/>
-        </local:PanContainer>
+
+        <Image Source="campus_map_reduced" HeightRequest="1700" WidthRequest="1100">
+            <Image.GestureRecognizers>
+                <PanGestureRecognizer PanUpdated="PanGestureRecognizer_PanUpdated"/>
+                <PinchGestureRecognizer PinchUpdated="PinchGestureRecognizer_PinchUpdated"/>
+            </Image.GestureRecognizers>
+        </Image>
+
     </AbsoluteLayout>
 
 </ContentView>

@@ -10,6 +10,7 @@ namespace JacksUI
     {
         double x, y;
 
+
         public PanContainer()
         {
             // Set PanGestureRecognizer.TouchPoints to control the
