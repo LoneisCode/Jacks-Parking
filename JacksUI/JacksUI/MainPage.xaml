@@ -1,44 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="JacksUI.MainPage">
+             x:Class="JacksUI.MainPage"
+             xmlns:Component ="clr-namespace:JacksUI">
 
-    
-    
     <ScrollView>
         <VerticalStackLayout
-            Spacing="25"
-            Padding="30,0"
             VerticalOptions="Center">
-
-            
-            
-            <Image
-                Source="routes.png"
-                SemanticProperties.Description="Cute dot net bot waving hi to you!"
-                HeightRequest="200"
-                HorizontalOptions="Center" />
-
-            <Label
-                Text="Jacks Parking"
-                SemanticProperties.HeadingLevel="Level1"
-                FontSize="32"
-                HorizontalOptions="Center" />
-
-            <Label
-                Text="Parking made easy by Lumberjacks"
-                SemanticProperties.HeadingLevel="Level2"
-                SemanticProperties.Description="Parking made easy"
-                FontSize="18"
-                HorizontalOptions="Center" />
-
-            <Button
-                x:Name="CounterBtn"
-                Text="Click me"
-                SemanticProperties.Hint="Counts the number of times you click"
-                Clicked="OnCounterClicked"
-                HorizontalOptions="Center" />
-
+            <Component:InteractiveMap/>
         </VerticalStackLayout>
     </ScrollView>
 

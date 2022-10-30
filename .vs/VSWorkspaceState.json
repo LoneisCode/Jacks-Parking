@@ -1,7 +1,8 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\JacksUI"
   ],
-  "SelectedNode": "\\JacksUI.sln",
+  "SelectedNode": "\\JacksUI\\JacksUI.sln",
   "PreviewInSolutionExplorer": false
 }

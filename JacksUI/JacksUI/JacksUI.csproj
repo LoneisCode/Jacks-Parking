@@ -39,8 +39,6 @@
 		<MauiSplashScreen Include="Resources\Splash\stephen.png" Color="#512BD4" BaseSize="128,128" />
 
 		<!-- Images -->
-		<MauiImage Include="Resources\Images\*" />
-		<MauiImage Update="Resources\Images\routes.png" BaseSize="168,208" />
 
 		<!-- Custom Fonts -->
 		<MauiFont Include="Resources\Fonts\*" />
@@ -51,8 +49,18 @@
 
 	<ItemGroup>
 	  <None Remove="Resources\AppIcon\stephen.png" />
-	  <None Remove="Resources\Images\routes.PNG" />
+	  <None Remove="Resources\Images\campus_map_reduced.png" />
 	  <None Remove="Resources\Splash\stephen.png" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiXaml Update="InteractiveMap.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiImage Include="Resources\Images\campus_map_reduced.png" />
 	</ItemGroup>
 
 </Project>
