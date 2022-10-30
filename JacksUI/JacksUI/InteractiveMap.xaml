@@ -3,12 +3,13 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="JacksUI.InteractiveMap"
              xmlns:local="clr-namespace:JacksUI">
+    
     <AbsoluteLayout>
-        <Image Source="campus_map_reduced" HeightRequest="1700" WidthRequest="1100">
+        <Image Source="campus_map_reduced" HeightRequest="800">
             <Image.GestureRecognizers>
-                <PanGestureRecognizer PanUpdated="PanGestureRecognizer_PanUpdated"/>
                 <PinchGestureRecognizer PinchUpdated="PinchGestureRecognizer_PinchUpdated"/>
             </Image.GestureRecognizers>
         </Image>
     </AbsoluteLayout>
+    
 </ContentView>
