@@ -4,11 +4,11 @@
              x:Class="JacksUI.MainPage"
              xmlns:Component ="clr-namespace:JacksUI">
 
-    <ScrollView>
+    
         <VerticalStackLayout
             VerticalOptions="Center">
             <Component:InteractiveMap/>
         </VerticalStackLayout>
-    </ScrollView>
+    
 
 </ContentPage>

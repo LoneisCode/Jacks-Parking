@@ -29,7 +29,7 @@ public partial class InteractiveMap : ContentView
         }
     }
 
-	private void PinchGestureRecognizer_PinchUpdated(object sender, PinchGestureUpdatedEventArgs e)
+    private void PinchGestureRecognizer_PinchUpdated(object sender, PinchGestureUpdatedEventArgs e)
 	{
         if (e.Status == GestureStatus.Started)
         {
