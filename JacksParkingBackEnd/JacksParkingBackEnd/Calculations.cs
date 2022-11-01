@@ -15,7 +15,8 @@ namespace JacksParkingBackEnd
                 double unroundedResult = Math.Sqrt((sum) / colorArr.Count());
                 return Math.Round(unroundedResult, 7);
             }
-            catch (ArgumentNullException e) {
+            catch (ArgumentNullException e)
+            {
                 Console.WriteLine(e.Message);
             }
             return -1;
@@ -23,7 +24,7 @@ namespace JacksParkingBackEnd
 
         public static double[] confidenceInterval(double[] colorArr)
         {
-            double[] result = new double[2]; 
+            double[] result = new double[2];
             try
             {
                 double mean = colorArr.Average();
@@ -37,10 +38,12 @@ namespace JacksParkingBackEnd
 
                 return result;
             }
-            catch (ArgumentNullException e) {
+            catch (ArgumentNullException e)
+            {
                 Console.WriteLine("RBG array is null or value at index i is null.");
                 Console.WriteLine(e.Message);
             }
             return null;
         }
+    }
 }

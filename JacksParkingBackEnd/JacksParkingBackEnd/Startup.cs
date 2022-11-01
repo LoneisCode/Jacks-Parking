@@ -9,7 +9,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Drawing;
-using JacksUI;
 
 namespace JacksParkingBackEnd
 {
@@ -20,17 +19,19 @@ namespace JacksParkingBackEnd
             Configuration = configuration;
 
             ParkingSpot[] vSpots = new ParkingSpot[3];
-            vSpots[0] = new ParkingSpot(379, 328, 362, 356); //empty
-            vSpots[1] = new ParkingSpot(513, 323, 519, 356); //red car
-            vSpots[2] = new ParkingSpot(215, 325, 169, 357); //white challenger with silver hood
+            //when filling, decide if diagonal is top left or bottom right
+            vSpots[0] = new ParkingSpot(379, 328, 362, 356, false); //empty, bottom left
+            vSpots[1] = new ParkingSpot(478, 325, 550, 359, true);//513, 323, 519, 356); old values //red car, top left
+            vSpots[2] = new ParkingSpot(215, 325, 169, 357, false); //white challenger with silver hood
             Bitmap Village = new Bitmap("Resources/images/lot_image.png");
             ParkingLot village = new ParkingLot("Resources/images/lot_image.png", vSpots, Village);
+            System.Diagnostics.Debug.WriteLine(village.spotsStatus());
 
 
             //Glenn Test
-            double[] rValues = Bitmapping.getR(Village, 379, 328, 362, 356, vSpots[0].getLength(), 0);
-            double[] standardOfComparison = Calculations.confidenceInterval(rValues);
-            Calculations.IsAvailable(standardOfComparison, rValues);
+            //double[] rValues = Bitmapping.getR(Village, 379, 328, 362, 356, vSpots[0].getLength(), 0);
+            //double[] standardOfComparison = Calculations.confidenceInterval(rValues);
+            //Calculations.IsAvailable(standardOfComparison, rValues);
 
         }
 

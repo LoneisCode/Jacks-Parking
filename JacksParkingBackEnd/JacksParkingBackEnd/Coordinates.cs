@@ -7,7 +7,7 @@ namespace JacksParkingBackEnd
 {
     public class Coordinates
     {
-        private int topX;
+        //private int topX;
 
     }
 }

@@ -1,4 +1,4 @@
-﻿namespace JacksUI
+﻿namespace JacksParkingBackEnd
 {
     public static class Constants
     {
