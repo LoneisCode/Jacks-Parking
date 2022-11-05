@@ -4,12 +4,15 @@ using System.Drawing;
 
     public class Bitmapping
     {
-
-    //returns the R values of the diagonal pixels. Iterates over the x coordinate 
+        // Input: A single parking spot object.
+        // Output: Red component values of the diagonal pixels.
+        // Iterates over the x coordinate.
         public static double[] getR(ParkingSpot spot, Bitmap lot)
         {
-            //setting the starting pixel (bottom left corner)
-            int x = spot.getBottomX(); //being int, pixels will be somewhat off of diagonal but should be good enough
+            // TODO: Add "if" to set x and y to top or bottom left (x,y) pair coordinate.
+            // Setting the starting pixel (either top left OR bottom left).
+            // Being int, pixels will be somewhat off of diagonal but should be good enough.
+            int x = spot.getBottomX(); 
             int y = spot.getBottomY();
 
             double[] rValues = new double[spot.getXRange()];
@@ -29,32 +32,42 @@ using System.Drawing;
             return rValues;
         }
 
+        // Input: A single parking spot object.
+        // Output: Green component values of the diagonal pixels.
+        // Iterates over the x coordinate.
         public static double[] getG(ParkingSpot spot, Bitmap lot)
         {
-                //setting the starting pixel (bottom left corner)
-                int x = spot.getBottomX(); //being int, pixels will be somewhat off of diagonal but should be good enough
-                int y = spot.getBottomY();
+            // TODO: Add "if" to set x and y to top or bottom left (x,y) pair coordinate.
+            // Setting the starting pixel (either top left OR bottom left).
+            // Being int, pixels will be somewhat off of diagonal but should be good enough.
+            int x = spot.getBottomX(); 
+            int y = spot.getBottomY();
 
-                double[] gValues = new double[spot.getXRange()];
+            double[] gValues = new double[spot.getXRange()];
 
-                for (int i = 0; i < spot.getXRange(); i++)
-                {
-                    Color c = lot.GetPixel(x, y);
-                    gValues[i] = c.G;
-                    if (spot.getTopLeft())
-                        x -= 1;
-                    else
-                        x += 1;
-                    y = (int)(spot.getSlope() * x + spot.getB());
-                }
+            for (int i = 0; i < spot.getXRange(); i++)
+            {
+                Color c = lot.GetPixel(x, y);
+                gValues[i] = c.G;
+                if (spot.getTopLeft())
+                    x -= 1;
+                else
+                    x += 1;
+                y = (int)(spot.getSlope() * x + spot.getB());
+            }
 
-                return gValues;
+            return gValues;
         }
 
+        // Input: A single parking spot object.
+        // Output: Green component values of the diagonal pixels.
+        // Iterates over the x coordinate.
         public static double[] getB(ParkingSpot spot, Bitmap lot)
         {
-            //setting the starting pixel (bottom left corner)
-            int x = spot.getBottomX(); //being int, pixels will be somewhat off of diagonal but should be good enough
+            // TODO: Add "if" to set x and y to top or bottom left (x,y) pair coordinate.
+            // Setting the starting pixel (either top left OR bottom left).
+            // Being int, pixels will be somewhat off of diagonal but should be good enough.
+            int x = spot.getBottomX(); 
             int y = spot.getBottomY();
 
             double[] bValues = new double[spot.getXRange()];

@@ -7,9 +7,9 @@ namespace JacksParkingBackEnd
     // for an empty parking spot. 
     public class Calculations
     {
-        // Input: Array of Red values, Array of Blue values, or Array of Green values
-        // Output: Population Standard Deviation
-        // Helper method to ConfidenceInterval()
+        // Input: Array of Red values, Array of Blue values, or Array of Green values.
+        // Output: Population Standard Deviation.
+        // Helper method to ConfidenceInterval().
         private static double StandardDeviation(double[] colorArr, double mean)
         {
             try
@@ -25,8 +25,8 @@ namespace JacksParkingBackEnd
             return -1;
         }
 
-        // Input: Array of Red values, Array of Blue values, or Array of Green values
-        // Output: Confidence intervals of red, green, and blue values
+        // Input: Array of Red values, Array of Blue values, or Array of Green values.
+        // Output: Confidence intervals of red, green, and blue values.
         public static double[] ConfidenceInterval(double[] colorArr)
         {
             double[] result = new double[2];
