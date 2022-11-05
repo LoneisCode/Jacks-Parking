@@ -3,11 +3,14 @@ using System.Linq;
 
 namespace JacksParkingBackEnd
 {
+    // Calculations class only intended for retrieving confidence interval 
+    // for an empty parking spot. 
     public class Calculations
     {
-        //Input: Array of Red values, Array of Blue values, or Array of Green values
-        //Output: Population Standard Deviation
-        public static double standardDeviation(double[] colorArr, double mean)
+        // Input: Array of Red values, Array of Blue values, or Array of Green values
+        // Output: Population Standard Deviation
+        // Helper method to ConfidenceInterval()
+        private static double StandardDeviation(double[] colorArr, double mean)
         {
             try
             {
@@ -29,7 +32,7 @@ namespace JacksParkingBackEnd
             {
                 double mean = colorArr.Average();
                 int sampleSize = colorArr.Length - 1;
-                double sd = standardDeviation(colorArr, mean);
+                double sd = StandardDeviation(colorArr, mean);
                 double lowerBound = mean - (Constants.confidenceLevel_99 * (sd / Math.Sqrt(sampleSize)));
                 double upperBound = mean + (Constants.confidenceLevel_99 * (sd / Math.Sqrt(sampleSize)));
 
