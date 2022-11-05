@@ -36,9 +36,9 @@ namespace JacksParkingBackEnd
         {
             for (int i = 0; i < this.spots.Length; i++)
             {
-                spots[i].setR(Bitmapping.getR(spots[i], lot)); // Red
-                spots[i].setG(Bitmapping.getG(spots[i], lot)); // Green
-                spots[i].setB(Bitmapping.getB(spots[i], lot)); // Blue
+                spots[i].setR(Bitmapping.GetR(spots[i], lot)); // Red
+                spots[i].setG(Bitmapping.GetG(spots[i], lot)); // Green
+                spots[i].setB(Bitmapping.GetB(spots[i], lot)); // Blue
             }
         }
 

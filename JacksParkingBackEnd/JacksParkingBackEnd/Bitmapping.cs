@@ -7,7 +7,7 @@ using System.Drawing;
         // Input: A single parking spot object.
         // Output: Red component values of the diagonal pixels.
         // Iterates over the x coordinate.
-        public static double[] getR(ParkingSpot spot, Bitmap lot)
+        public static double[] GetR(ParkingSpot spot, Bitmap lot)
         {
             // TODO: Add "if" to set x and y to top or bottom left (x,y) pair coordinate.
             // Setting the starting pixel (either top left OR bottom left).
@@ -35,7 +35,7 @@ using System.Drawing;
         // Input: A single parking spot object.
         // Output: Green component values of the diagonal pixels.
         // Iterates over the x coordinate.
-        public static double[] getG(ParkingSpot spot, Bitmap lot)
+        public static double[] GetG(ParkingSpot spot, Bitmap lot)
         {
             // TODO: Add "if" to set x and y to top or bottom left (x,y) pair coordinate.
             // Setting the starting pixel (either top left OR bottom left).
@@ -62,7 +62,7 @@ using System.Drawing;
         // Input: A single parking spot object.
         // Output: Green component values of the diagonal pixels.
         // Iterates over the x coordinate.
-        public static double[] getB(ParkingSpot spot, Bitmap lot)
+        public static double[] GetB(ParkingSpot spot, Bitmap lot)
         {
             // TODO: Add "if" to set x and y to top or bottom left (x,y) pair coordinate.
             // Setting the starting pixel (either top left OR bottom left).

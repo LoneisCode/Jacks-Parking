@@ -29,7 +29,7 @@ namespace JacksParkingBackEnd
 
 
             //Glenn Test
-            //double[] rValues = Bitmapping.getR(Village, 379, 328, 362, 356, vSpots[0].getLength(), 0);
+            //double[] rValues = Bitmapping.GetR(Village, 379, 328, 362, 356, vSpots[0].getLength(), 0);
             //double[] standardOfComparison = Calculations.ConfidenceInterval(rValues);
             //Calculations.IsAvailable(standardOfComparison, rValues);
 
