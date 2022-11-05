@@ -25,7 +25,7 @@ namespace JacksParkingBackEnd
             vSpots[2] = new ParkingSpot(215, 325, 169, 357, false); //white challenger with silver hood
             Bitmap Village = new Bitmap("Resources/images/lot_image.png");
             ParkingLot village = new ParkingLot("Resources/images/lot_image.png", vSpots, Village);
-            System.Diagnostics.Debug.WriteLine(village.spotsStatus());
+            System.Diagnostics.Debug.WriteLine(village.SpotsStatus());
 
 
             //Glenn Test

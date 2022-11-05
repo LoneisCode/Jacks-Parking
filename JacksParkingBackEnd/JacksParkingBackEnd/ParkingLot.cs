@@ -23,7 +23,7 @@ namespace JacksParkingBackEnd
             this.spots = spots;
             this.lot = lot;
 
-            setRGB();
+            SetRGB();
 
             // Creating empty parking spot confidence interval.
             this.confidenceIntRed = Calculations.ConfidenceInterval(spots[0].getRed());
@@ -32,7 +32,7 @@ namespace JacksParkingBackEnd
         }
 
         // For each parking spot, get the red, green, and blue component values.
-        public void setRGB()
+        public void SetRGB()
         {
             for (int i = 0; i < this.spots.Length; i++)
             {
@@ -42,7 +42,7 @@ namespace JacksParkingBackEnd
             }
         }
 
-        public string getImagePath()
+        public string GetImagePath()
         {
             return imagePath;
         }
@@ -52,14 +52,14 @@ namespace JacksParkingBackEnd
             return lot;
         }
 
-        public ParkingSpot[] getSpots()
+        public ParkingSpot[] GetSpots()
         {
             return this.spots;
         }
 
         // Returns the total number of available parking spots 
         // in a parking lot.
-        public int? spotsStatus()
+        public int? SpotsStatus()
         {
             // Stores total spots.
             // Decrements as they fall "out" of the confidence intervals.
