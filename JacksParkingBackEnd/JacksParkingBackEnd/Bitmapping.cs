@@ -12,21 +12,21 @@ using System.Drawing;
             // TODO: Add "if" to set x and y to top or bottom left (x,y) pair coordinate.
             // Setting the starting pixel (either top left OR bottom left).
             // Being int, pixels will be somewhat off of diagonal but should be good enough.
-            int x = spot.getBottomX(); 
-            int y = spot.getBottomY();
+            int x = spot.GetBottomX(); 
+            int y = spot.GetBottomY();
 
-            double[] rValues = new double[spot.getXRange()];
+            double[] rValues = new double[spot.GetXRange()];
 
-            for (int i = 0; i < spot.getXRange(); i++)
+            for (int i = 0; i < spot.GetXRange(); i++)
             {
                 Color c = lot.GetPixel(x, y);
                 rValues[i] = c.R;
-                if (spot.getTopLeft())
+                if (spot.GetIsTopLeft())
                     x -= 1;
                 else
                     x += 1;
 
-                y = (int)(spot.getSlope() * x + spot.getB());
+                y = (int)(spot.GetSlope() * x + spot.getB());
             }
 
             return rValues;
@@ -40,20 +40,20 @@ using System.Drawing;
             // TODO: Add "if" to set x and y to top or bottom left (x,y) pair coordinate.
             // Setting the starting pixel (either top left OR bottom left).
             // Being int, pixels will be somewhat off of diagonal but should be good enough.
-            int x = spot.getBottomX(); 
-            int y = spot.getBottomY();
+            int x = spot.GetBottomX(); 
+            int y = spot.GetBottomY();
 
-            double[] gValues = new double[spot.getXRange()];
+            double[] gValues = new double[spot.GetXRange()];
 
-            for (int i = 0; i < spot.getXRange(); i++)
+            for (int i = 0; i < spot.GetXRange(); i++)
             {
                 Color c = lot.GetPixel(x, y);
                 gValues[i] = c.G;
-                if (spot.getTopLeft())
+                if (spot.GetIsTopLeft())
                     x -= 1;
                 else
                     x += 1;
-                y = (int)(spot.getSlope() * x + spot.getB());
+                y = (int)(spot.GetSlope() * x + spot.getB());
             }
 
             return gValues;
@@ -67,20 +67,20 @@ using System.Drawing;
             // TODO: Add "if" to set x and y to top or bottom left (x,y) pair coordinate.
             // Setting the starting pixel (either top left OR bottom left).
             // Being int, pixels will be somewhat off of diagonal but should be good enough.
-            int x = spot.getBottomX(); 
-            int y = spot.getBottomY();
+            int x = spot.GetBottomX(); 
+            int y = spot.GetBottomY();
 
-            double[] bValues = new double[spot.getXRange()];
+            double[] bValues = new double[spot.GetXRange()];
 
-            for (int i = 0; i < spot.getXRange(); i++)
+            for (int i = 0; i < spot.GetXRange(); i++)
             {
                 Color c = lot.GetPixel(x, y);
                 bValues[i] = c.B;
-                if (spot.getTopLeft())
+                if (spot.GetIsTopLeft())
                     x -= 1;
                 else
                     x += 1;
-                y = (int)(spot.getSlope() * x + spot.getB());
+                y = (int)(spot.GetSlope() * x + spot.getB());
             }
 
             return bValues;

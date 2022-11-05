@@ -16,86 +16,87 @@ namespace JacksParkingBackEnd
         private double[] red;
         private double[] green;
         private double[] blue;
-        private bool topLeft;
+        private bool isTopLeft;
 
 
-        public ParkingSpot(int topX, int topY, int bottomX, int bottomY, bool topLeft)
+        public ParkingSpot(int topX, int topY, int bottomX, int bottomY, bool isTopLeft)
         {
             this.topX = topX;
             this.bottomY = bottomY;
             this.topY = topY;
             this.bottomX = bottomX;
             xRange = Math.Abs(topX - bottomX);
-            this.length = (int)Math.Sqrt(Math.Pow((double)(topX - bottomX), 2) + Math.Pow((double)(topY - bottomY), 2)); //distance formula
+            // Distance formula
+            this.length = (int)Math.Sqrt(Math.Pow((double)(topX - bottomX), 2) + Math.Pow((double)(topY - bottomY), 2)); 
             this.slope = (topY - bottomY) / (topX - bottomX);
             this.b = (this.topY) - (this.slope * this.topX);
-            this.topLeft = topLeft;
+            this.isTopLeft = isTopLeft;
         }
 
-        public bool getTopLeft()
+        public bool GetIsTopLeft()
         {
-            return this.topLeft;
+            return this.isTopLeft;
         }
 
-        public int getXRange()
+        public int GetXRange()
         {
             return this.xRange;
         }
-        public void setR(double[] red)
+        public void SetR(double[] red)
         {
             this.red = red;
         }
 
-        public void setG(double[] green)
+        public void SetG(double[] green)
         {
             this.green = green;
         }
 
-        public void setB(double[] blue)
+        public void SetB(double[] blue)
         {
             this.blue = blue;
         }
 
-        public int getBottomX()
+        public int GetBottomX()
         {
             return this.bottomX;
         }
 
-        public int getBottomY()
+        public int GetBottomY()
         {
             return this.bottomY;
         }
 
-        public int getTopX()
+        public int GetTopX()
         {
             return this.topX;
         }
 
-        public int getTopY()
+        public int GetTopY()
         {
             return this.topY;
         }
 
-        public int getLength()
+        public int GetLength()
         {
             return this.length;
         }
 
-        public double[] getRed()
+        public double[] GetRed()
         {
             return this.red;
         }
 
-        public double[] getBlue()
+        public double[] GetBlue()
         {
             return this.blue;
         }
-        public double[] getGreen()
+        public double[] GetGreen()
         {
             return this.green;
         }
 
-        public double getSlope()
+        public double GetSlope()
         {
             return this.slope;
         }

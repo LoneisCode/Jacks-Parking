@@ -26,9 +26,9 @@ namespace JacksParkingBackEnd
             SetRGB();
 
             // Creating empty parking spot confidence interval.
-            this.confidenceIntRed = Calculations.ConfidenceInterval(spots[0].getRed());
-            this.confidenceIntGreen = Calculations.ConfidenceInterval(spots[0].getGreen());
-            this.confidenceIntBlue = Calculations.ConfidenceInterval(spots[0].getBlue());
+            this.confidenceIntRed = Calculations.ConfidenceInterval(spots[0].GetRed());
+            this.confidenceIntGreen = Calculations.ConfidenceInterval(spots[0].GetGreen());
+            this.confidenceIntBlue = Calculations.ConfidenceInterval(spots[0].GetBlue());
         }
 
         // For each parking spot, get the red, green, and blue component values.
@@ -36,9 +36,9 @@ namespace JacksParkingBackEnd
         {
             for (int i = 0; i < this.spots.Length; i++)
             {
-                spots[i].setR(Bitmapping.GetR(spots[i], lot)); // Red
-                spots[i].setG(Bitmapping.GetG(spots[i], lot)); // Green
-                spots[i].setB(Bitmapping.GetB(spots[i], lot)); // Blue
+                spots[i].SetR(Bitmapping.GetR(spots[i], lot)); // Red
+                spots[i].SetG(Bitmapping.GetG(spots[i], lot)); // Green
+                spots[i].SetB(Bitmapping.GetB(spots[i], lot)); // Blue
             }
         }
 
@@ -71,9 +71,9 @@ namespace JacksParkingBackEnd
 
                     bool available = true;
                     
-                    double meanR = spots[i].getRed().Average();
-                    double meanG = spots[i].getGreen().Average();
-                    double meanB = spots[i].getBlue().Average();
+                    double meanR = spots[i].GetRed().Average();
+                    double meanG = spots[i].GetGreen().Average();
+                    double meanB = spots[i].GetBlue().Average();
 
                     double lowerBoundR = confidenceIntRed[0];
                     double upperBoundR = confidenceIntRed[1];
