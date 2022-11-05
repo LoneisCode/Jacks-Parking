@@ -25,7 +25,9 @@ namespace JacksParkingBackEnd
             return -1;
         }
 
-        public static double[] confidenceInterval(double[] colorArr)
+        // Input: Array of Red values, Array of Blue values, or Array of Green values
+        // Output: Confidence intervals of red, green, and blue values
+        public static double[] ConfidenceInterval(double[] colorArr)
         {
             double[] result = new double[2];
             try

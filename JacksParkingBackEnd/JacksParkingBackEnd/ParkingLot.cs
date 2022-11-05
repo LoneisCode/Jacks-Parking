@@ -23,9 +23,9 @@ namespace JacksParkingBackEnd
 
             setRGB();
             //creating empty parking spot confidence interval
-            this.confidenceIntRed = Calculations.confidenceInterval(spots[0].getRed());
-            this.confidenceIntGreen = Calculations.confidenceInterval(spots[0].getGreen());
-            this.confidenceIntBlue = Calculations.confidenceInterval(spots[0].getBlue());
+            this.confidenceIntRed = Calculations.ConfidenceInterval(spots[0].getRed());
+            this.confidenceIntGreen = Calculations.ConfidenceInterval(spots[0].getGreen());
+            this.confidenceIntBlue = Calculations.ConfidenceInterval(spots[0].getBlue());
         }
 
         public void setRGB()
