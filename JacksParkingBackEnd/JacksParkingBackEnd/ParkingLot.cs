@@ -7,14 +7,16 @@ namespace JacksParkingBackEnd
     public class ParkingLot
     {
         private ParkingSpot[] spots;
-        private string imagePath; //this will be the stream or something later
+        // This will be the stream or something later.
+        private string imagePath; 
         Bitmap lot;
-        //empty spot confidence intervals
+        
+        // Empty spot confidence intervals.
         private double[] confidenceIntRed;
         private double[] confidenceIntGreen;
         private double[] confidenceIntBlue;
 
-
+        // Constructor 
         public ParkingLot(string imagePath, ParkingSpot[] spots, Bitmap lot)
         {
             this.imagePath = imagePath;
@@ -22,19 +24,21 @@ namespace JacksParkingBackEnd
             this.lot = lot;
 
             setRGB();
-            //creating empty parking spot confidence interval
+
+            // Creating empty parking spot confidence interval.
             this.confidenceIntRed = Calculations.ConfidenceInterval(spots[0].getRed());
             this.confidenceIntGreen = Calculations.ConfidenceInterval(spots[0].getGreen());
             this.confidenceIntBlue = Calculations.ConfidenceInterval(spots[0].getBlue());
         }
 
+        // For each parking spot, get the red, green, and blue component values.
         public void setRGB()
         {
             for (int i = 0; i < this.spots.Length; i++)
             {
-                spots[i].setR(Bitmapping.getR(spots[i], lot)); //Red
-                spots[i].setG(Bitmapping.getG(spots[i], lot));//Green
-                spots[i].setB(Bitmapping.getB(spots[i], lot));//Blue
+                spots[i].setR(Bitmapping.getR(spots[i], lot)); // Red
+                spots[i].setG(Bitmapping.getG(spots[i], lot)); // Green
+                spots[i].setB(Bitmapping.getB(spots[i], lot)); // Blue
             }
         }
 
@@ -53,10 +57,12 @@ namespace JacksParkingBackEnd
             return this.spots;
         }
 
-        //returns a total of available spots
+        // Returns the total number of available parking spots 
+        // in a parking lot.
         public int? spotsStatus()
         {
-            //stores total spots, decrements as they fall "out" of the confidence intervals
+            // Stores total spots.
+            // Decrements as they fall "out" of the confidence intervals.
             int availableSpots = spots.Length;
             
             try
