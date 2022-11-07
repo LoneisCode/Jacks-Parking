@@ -16,6 +16,11 @@ namespace JacksParkingBackEnd
         private double[] confidenceIntGreen;
         private double[] confidenceIntBlue;
 
+        // Empty spot confidence intervals for shadows
+        private double[] confidenceIntRed2;
+        private double[] confidenceIntGreen2;
+        private double[] confidenceIntBlue2;
+
         // Constructor 
         public ParkingLot(string imagePath, ParkingSpot[] spots, Bitmap lot)
         {
@@ -29,6 +34,9 @@ namespace JacksParkingBackEnd
             this.confidenceIntRed = Calculations.ConfidenceInterval(spots[0].GetRed());
             this.confidenceIntGreen = Calculations.ConfidenceInterval(spots[0].GetGreen());
             this.confidenceIntBlue = Calculations.ConfidenceInterval(spots[0].GetBlue());
+            this.confidenceIntRed2 = Calculations.ConfidenceInterval(spots[1].GetRed());
+            this.confidenceIntGreen2 = Calculations.ConfidenceInterval(spots[1].GetGreen());
+            this.confidenceIntBlue2 = Calculations.ConfidenceInterval(spots[1].GetBlue());
         }
 
         // For each parking spot, get the red, green, and blue component values.
@@ -82,23 +90,46 @@ namespace JacksParkingBackEnd
                     double lowerBoundB = confidenceIntBlue[0];
                     double upperBoundB = confidenceIntBlue[1];
 
+                    double lowerBoundR2 = confidenceIntRed2[0];
+                    double upperBoundR2 = confidenceIntRed2[1];
+                    double lowerBoundG2 = confidenceIntGreen2[0];
+                    double upperBoundG2 = confidenceIntGreen2[1];
+                    double lowerBoundB2 = confidenceIntBlue2[0];
+                    double upperBoundB2 = confidenceIntBlue2[1];
+
                     if ((meanR < lowerBoundR) || (meanR > upperBoundR))
                     {
-                        System.Diagnostics.Debug.WriteLine("red is not in the bounds");
                         available = false;
+
+                        if ((meanR < lowerBoundR2) || (meanR > upperBoundR2))
+                        {
+                            System.Diagnostics.Debug.WriteLine("red is not in the bounds");
+                            available = true;
+                        }
                     }
 
                     else if ((meanG < lowerBoundG) || (meanG > upperBoundG))
                     {
-                        System.Diagnostics.Debug.WriteLine("green is not in the bounds");
                         available = false;
+
+                        if ((meanG < lowerBoundG2) || (meanG > upperBoundG2))
+                        {
+                            System.Diagnostics.Debug.WriteLine("green is not in the bounds");
+                            available = true;
+                        }
                     }
 
                     else if ((meanB < lowerBoundB) || (meanB > upperBoundB))
                     {
-                        System.Diagnostics.Debug.WriteLine("blue is not in the bounds");
                         available = false;
+
+                        if ((meanB < lowerBoundB2) || (meanB > upperBoundB2))
+                        {
+                            System.Diagnostics.Debug.WriteLine("blue is not in the bounds");
+                            available = true;
+                        }
                     }
+
 
                     if(!available)
                         availableSpots--;                
