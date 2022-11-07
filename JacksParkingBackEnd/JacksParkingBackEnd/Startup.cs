@@ -30,7 +30,7 @@ namespace JacksParkingBackEnd
             vSpots[7] = new ParkingSpot(350, 319, 324, 358, false); // Spot 8, taken
             vSpots[8] = new ParkingSpot(381, 324, 362, 358, false); // Spot 9, empty
             vSpots[9] = new ParkingSpot(419, 319, 401, 358, false); // Spot 10, taken
-            vSpots[10] = new ParkingSpot(425, 323, 376, 358, true); // Spot 11, empty
+            vSpots[10] = new ParkingSpot(425, 323, 376, 358, true); // Spot 11, empty, NOT REGISTERING AS EMPTY
             vSpots[11] = new ParkingSpot(144, 328, 82, 358, false); // Spot 2, empty
             vSpots[12] = new ParkingSpot(477, 324, 551, 358, true); // Spot 13, taken
             vSpots[13] = new ParkingSpot(518, 320, 584, 358, true); // Spot 14, taken

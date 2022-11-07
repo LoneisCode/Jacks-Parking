@@ -101,29 +101,29 @@ namespace JacksParkingBackEnd
                     {
                         available = false;
 
-                        if ((meanR < lowerBoundR2) || (meanR > upperBoundR2))
+                        if ((meanR > lowerBoundR2) && (meanR < upperBoundR2))
                         {
                             System.Diagnostics.Debug.WriteLine("red is not in the bounds");
                             available = true;
                         }
                     }
 
-                    else if ((meanG < lowerBoundG) || (meanG > upperBoundG))
+                    if ((meanG < lowerBoundG) || (meanG > upperBoundG))
                     {
                         available = false;
 
-                        if ((meanG < lowerBoundG2) || (meanG > upperBoundG2))
+                        if ((meanG > lowerBoundG2) && (meanG < upperBoundG2))
                         {
                             System.Diagnostics.Debug.WriteLine("green is not in the bounds");
                             available = true;
                         }
                     }
 
-                    else if ((meanB < lowerBoundB) || (meanB > upperBoundB))
+                    if ((meanB < lowerBoundB) || (meanB > upperBoundB))
                     {
                         available = false;
 
-                        if ((meanB < lowerBoundB2) || (meanB > upperBoundB2))
+                        if ((meanB > lowerBoundB2) && (meanB < upperBoundB2))
                         {
                             System.Diagnostics.Debug.WriteLine("blue is not in the bounds");
                             available = true;
