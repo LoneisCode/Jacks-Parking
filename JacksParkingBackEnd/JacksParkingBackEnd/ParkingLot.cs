@@ -83,6 +83,7 @@ namespace JacksParkingBackEnd
                     double meanG = spots[i].GetGreen().Average();
                     double meanB = spots[i].GetBlue().Average();
 
+                    // First empty spot with sun and shade.
                     double lowerBoundR = confidenceIntRed[0];
                     double upperBoundR = confidenceIntRed[1];
                     double lowerBoundG = confidenceIntGreen[0];
@@ -90,6 +91,7 @@ namespace JacksParkingBackEnd
                     double lowerBoundB = confidenceIntBlue[0];
                     double upperBoundB = confidenceIntBlue[1];
 
+                    // Second empty spot with all shade.
                     double lowerBoundR2 = confidenceIntRed2[0];
                     double upperBoundR2 = confidenceIntRed2[1];
                     double lowerBoundG2 = confidenceIntGreen2[0];
@@ -97,6 +99,10 @@ namespace JacksParkingBackEnd
                     double lowerBoundB2 = confidenceIntBlue2[0];
                     double upperBoundB2 = confidenceIntBlue2[1];
 
+                    // Check if R value average is similar to R value for an 
+                    // empty spot with sun and shade. If is out of bounds, 
+                    // set availability to false, but double check by comparing
+                    // R value average to R value for an empty spot with all shade.
                     if ((meanR < lowerBoundR) || (meanR > upperBoundR))
                     {
                         available = false;
@@ -108,6 +114,10 @@ namespace JacksParkingBackEnd
                         }
                     }
 
+                    // Check if R value average is similar to G value for an 
+                    // empty spot with sun and shade. If is out of bounds, 
+                    // set availability to false, but double check by comparing
+                    // R value average to G value for an empty spot with all shade.
                     if ((meanG < lowerBoundG) || (meanG > upperBoundG))
                     {
                         available = false;
@@ -119,6 +129,10 @@ namespace JacksParkingBackEnd
                         }
                     }
 
+                    // Check if R value average is similar to B value for an 
+                    // empty spot with sun and shade. If is out of bounds, 
+                    // set availability to false, but double check by comparing
+                    // R value average to B value for an empty spot with all shade.
                     if ((meanB < lowerBoundB) || (meanB > upperBoundB))
                     {
                         available = false;
