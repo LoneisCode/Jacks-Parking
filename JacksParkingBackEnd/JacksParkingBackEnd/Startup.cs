@@ -18,7 +18,7 @@ namespace JacksParkingBackEnd
         {
             Configuration = configuration;
 
-            ParkingSpot[] vSpots = new ParkingSpot[36];
+            ParkingSpot[] vSpots = new ParkingSpot[28];
             // When filling, decide if diagonal is starting from top left or bottom left. 
             // Parking spot numbers correspond to a personal list Jessie has written. 
             // First row from the bottom up. 
@@ -51,7 +51,16 @@ namespace JacksParkingBackEnd
             vSpots[25] = new ParkingSpot(371, 277, 355, 287, false); // Spot 26, taken
             vSpots[26] = new ParkingSpot(394, 275, 379, 291, false); // Spot 27, taken
             vSpots[27] = new ParkingSpot(414, 277, 405, 291, false); // Spot 28, taken
-           
+            // Third row from the bottom up. 
+            /*vSpots[28] = new ParkingSpot(132, 261, 110, 270, false); // Spot 29, empty || 8
+            vSpots[29] = new ParkingSpot(161, 256, 130, 267, false); // Spot 30, taken
+            vSpots[30] = new ParkingSpot(184, 256, 152, 269, false); // Spot 31, taken
+            vSpots[31] = new ParkingSpot(204, 259, 174, 269, false); // Spot 32, taken
+            vSpots[32] = new ParkingSpot(222, 260, 200, 269, false); // Spot 33, taken
+            vSpots[33] = new ParkingSpot(244, 260, 220, 269, false); // Spot 34, taken
+            vSpots[34] = new ParkingSpot(265, 260, 241, 269, false); // Spot 35, taken
+            vSpots[35] = new ParkingSpot(284, 260, 263, 269, false); // Spot 36, empty || 9 */
+            
 
 
 
