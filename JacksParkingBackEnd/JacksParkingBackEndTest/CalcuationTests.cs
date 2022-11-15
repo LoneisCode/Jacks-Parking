@@ -1,3 +1,5 @@
+using JacksParkingBackEnd;
+
 namespace JacksParkingBackEndTest
 {
     public class CalculationTests
@@ -6,12 +8,12 @@ namespace JacksParkingBackEndTest
         public void StandardDeviation()
         {
             //valid array input
-            double actualValue = Calculations.standardDeviation(CalculationsHelper.colorArr, CalculationsHelper.colorArrAverage);
+            double actualValue = Calculations.StandardDeviation(CalculationsHelper.colorArr, CalculationsHelper.colorArrAverage);
             Assert.Equal(CalculationsHelper.expectedStandardDeviation, actualValue);
 
             //null array input
             double[]? colorArr = null;
-            actualValue = Calculations.standardDeviation(colorArr, 0);
+            actualValue = Calculations.StandardDeviation(colorArr, 0);
             Assert.Equal(-1, actualValue);
 
         }
