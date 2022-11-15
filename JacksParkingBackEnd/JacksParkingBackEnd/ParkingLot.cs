@@ -65,6 +65,31 @@ namespace JacksParkingBackEnd
             return this.spots;
         }
 
+        public double[] GetConfidenceIntRed() 
+        {
+            return this.confidenceIntRed;
+        }
+        public double[] GetConfidenceIntGreen()
+        {
+            return this.confidenceIntGreen;
+        }
+        public double[] GetConfidenceIntBlue()
+        {
+            return this.confidenceIntBlue;
+        }
+        public double[] GetConfidenceIntRed2()
+        {
+            return this.confidenceIntRed2;
+        }
+        public double[] GetConfidenceIntGreen2()
+        {
+            return this.confidenceIntGreen2;
+        }
+        public double[] GetConfidenceIntBlue2()
+        {
+            return this.confidenceIntBlue2;
+        }
+
         // Returns the total number of available parking spots 
         // in a parking lot.
         public int? SpotsStatus()
