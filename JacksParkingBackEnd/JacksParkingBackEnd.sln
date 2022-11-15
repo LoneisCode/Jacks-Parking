@@ -5,7 +5,7 @@ VisualStudioVersion = 17.3.32825.248
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JacksParkingBackEnd", "JacksParkingBackEnd\JacksParkingBackEnd.csproj", "{66D465D9-6BEC-4753-9B77-AEEA90DD1CB0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JacksParkingTest", "JacksParkingTest\JacksParkingTest.csproj", "{940D1391-DBB4-48A5-9257-46CCD96279A3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JacksParkingBackEndTest", "JacksParkingBackEndTest\JacksParkingBackEndTest.csproj", "{1F6A1077-7EC8-435F-BC54-1CD70A66C3A8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,10 @@ Global
 		{66D465D9-6BEC-4753-9B77-AEEA90DD1CB0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{66D465D9-6BEC-4753-9B77-AEEA90DD1CB0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{66D465D9-6BEC-4753-9B77-AEEA90DD1CB0}.Release|Any CPU.Build.0 = Release|Any CPU
-		{940D1391-DBB4-48A5-9257-46CCD96279A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{940D1391-DBB4-48A5-9257-46CCD96279A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{940D1391-DBB4-48A5-9257-46CCD96279A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{940D1391-DBB4-48A5-9257-46CCD96279A3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F6A1077-7EC8-435F-BC54-1CD70A66C3A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F6A1077-7EC8-435F-BC54-1CD70A66C3A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F6A1077-7EC8-435F-BC54-1CD70A66C3A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F6A1077-7EC8-435F-BC54-1CD70A66C3A8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
