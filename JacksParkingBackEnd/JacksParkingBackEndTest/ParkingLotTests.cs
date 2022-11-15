@@ -1,8 +1,7 @@
 ﻿using JacksParkingBackEnd;
 using System.Drawing;
-using System.Security.Cryptography.X509Certificates;
 
-namespace JacksParkingBackEndTest
+namespace JacksParkingBackEndUnitTest
 {
     public class ParkingLotTests
     {

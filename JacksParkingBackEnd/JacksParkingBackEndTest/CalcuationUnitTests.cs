@@ -1,6 +1,6 @@
 using JacksParkingBackEnd;
 
-namespace JacksParkingBackEndTest
+namespace JacksParkingBackEndUnitTest
 {
     public class CalculationUnitTests
     {
