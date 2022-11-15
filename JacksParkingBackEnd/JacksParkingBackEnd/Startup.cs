@@ -65,8 +65,8 @@ namespace JacksParkingBackEnd
 
 
 
-            Bitmap Village = new Bitmap(Constants.imagePath);
-            ParkingLot village = new ParkingLot(Constants.imagePath, vSpots, Village);
+            Bitmap Village = new Bitmap(Constants.villageJPGImagePath);
+            ParkingLot village = new ParkingLot(Constants.villageJPGImagePath, vSpots, Village);
             System.Diagnostics.Debug.WriteLine(village.SpotsStatus());
 
         }
