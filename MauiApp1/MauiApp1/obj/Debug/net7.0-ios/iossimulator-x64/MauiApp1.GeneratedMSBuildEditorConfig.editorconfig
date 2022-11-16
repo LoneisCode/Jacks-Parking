@@ -8,39 +8,39 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = MauiApp1
-build_property.ProjectDir = C:\Users\Knile\LoneCodingProjects\ClassProjects\JacksParking\Jacks-Parking\MauiApp1\MauiApp1\
+build_property.ProjectDir = C:\Users\workm\source\repos\Jacks-Parking\MauiApp1\MauiApp1\
 
-[C:/Users/Knile/LoneCodingProjects/ClassProjects/JacksParking/Jacks-Parking/MauiApp1/MauiApp1/App.xaml]
+[C:/Users/workm/source/repos/Jacks-Parking/MauiApp1/MauiApp1/App.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = MauiApp1.App.xaml
 build_metadata.AdditionalFiles.TargetPath = App.xaml
 build_metadata.AdditionalFiles.RelativePath = App.xaml
 
-[C:/Users/Knile/LoneCodingProjects/ClassProjects/JacksParking/Jacks-Parking/MauiApp1/MauiApp1/AppShell.xaml]
+[C:/Users/workm/source/repos/Jacks-Parking/MauiApp1/MauiApp1/AppShell.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = MauiApp1.AppShell.xaml
 build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
 build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
 
-[C:/Users/Knile/LoneCodingProjects/ClassProjects/JacksParking/Jacks-Parking/MauiApp1/MauiApp1/InteractiveMap.xaml]
+[C:/Users/workm/source/repos/Jacks-Parking/MauiApp1/MauiApp1/InteractiveMap.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = MauiApp1.InteractiveMap.xaml
 build_metadata.AdditionalFiles.TargetPath = InteractiveMap.xaml
 build_metadata.AdditionalFiles.RelativePath = InteractiveMap.xaml
 
-[C:/Users/Knile/LoneCodingProjects/ClassProjects/JacksParking/Jacks-Parking/MauiApp1/MauiApp1/MainPage.xaml]
+[C:/Users/workm/source/repos/Jacks-Parking/MauiApp1/MauiApp1/MainPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = MauiApp1.MainPage.xaml
 build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
 build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
 
-[C:/Users/Knile/LoneCodingProjects/ClassProjects/JacksParking/Jacks-Parking/MauiApp1/MauiApp1/Resources/Styles/Colors.xaml]
+[C:/Users/workm/source/repos/Jacks-Parking/MauiApp1/MauiApp1/Resources/Styles/Colors.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = MauiApp1.Resources.Styles.Colors.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
 
-[C:/Users/Knile/LoneCodingProjects/ClassProjects/JacksParking/Jacks-Parking/MauiApp1/MauiApp1/Resources/Styles/Styles.xaml]
+[C:/Users/workm/source/repos/Jacks-Parking/MauiApp1/MauiApp1/Resources/Styles/Styles.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = MauiApp1.Resources.Styles.Styles.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
