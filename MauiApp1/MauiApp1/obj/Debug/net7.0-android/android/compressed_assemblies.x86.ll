@@ -24,4 +24,4 @@ target triple = "i686-unknown-linux-android"
 !0 = !{i32 1, !"wchar_size", i32 4}
 !1 = !{i32 7, !"PIC Level", i32 2}
 !2 = !{i32 1, !"NumRegisterParameters", i32 0}
-!3 = !{!"Xamarin.Android remotes/origin/release/7.0.1xx-rc2 @ bf10ce5525d97f2303993d631003df54f2837617"}
+!3 = !{!"Xamarin.Android remotes/origin/release/7.0.1xx @ 8f1d9a47205ead80132661f68b0cee9ed0e0220b"}

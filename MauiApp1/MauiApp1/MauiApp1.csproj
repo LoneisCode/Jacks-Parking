@@ -64,4 +64,10 @@
 	  <MauiImage Include="Resources\Images\campus_map_reduced.png" />
 	</ItemGroup>
 
+	<ItemGroup>
+	  <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="7.0.0" />
+	  <PackageReference Include="Microsoft.Maui.Controls.Maps" Version="7.0.49" />
+	  <PackageReference Include="Microsoft.Maui.Maps" Version="7.0.49" />
+	</ItemGroup>
+
 </Project>
