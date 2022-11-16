@@ -41,7 +41,11 @@
 		<MauiImage Include="Resources\Images\*" />
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 		<MauiImage Update="Resources\Images\dotnet_bot.svg" BaseSize="168,208" />
+=======
+		<MauiImage Update="Resources\Images\routes.png" BaseSize="168,208" />
+>>>>>>> 98fc10721fb7eb8e9185d46e44dcb33c4eec38a7
 =======
 		<MauiImage Update="Resources\Images\routes.png" BaseSize="168,208" />
 >>>>>>> 98fc10721fb7eb8e9185d46e44dcb33c4eec38a7
@@ -59,9 +63,12 @@
 	<ItemGroup>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="7.0.0-rc.2.22430.11" />
 		<PackageReference Include="Microsoft.Maui.Controls.Maps" Version="7.0.0-rc.2.6866" />
 =======
+=======
+>>>>>>> 98fc10721fb7eb8e9185d46e44dcb33c4eec38a7
 =======
 >>>>>>> 98fc10721fb7eb8e9185d46e44dcb33c4eec38a7
 	  <None Remove="Resources\AppIcon\stephen.png" />
@@ -78,6 +85,9 @@
 	<ItemGroup>
 	  <MauiImage Include="Resources\Images\campus_map_reduced.png" />
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 98fc10721fb7eb8e9185d46e44dcb33c4eec38a7
+=======
 >>>>>>> 98fc10721fb7eb8e9185d46e44dcb33c4eec38a7
 =======
 >>>>>>> 98fc10721fb7eb8e9185d46e44dcb33c4eec38a7
