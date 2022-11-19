@@ -1,8 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\JacksUI",
-    "\\JacksUI\\JacksUI"
+    "\\MauiApp1",
+    "\\MauiApp1\\MauiApp1"
   ],
+  "SelectedNode": "\\JacksParkingDB.mdf",
   "PreviewInSolutionExplorer": false
 }

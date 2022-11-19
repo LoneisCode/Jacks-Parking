@@ -13,150 +13,220 @@ namespace MauiApp1
     {
         static Object getXLocation(int id)
         {
-            SqlConnection conn = new SqlConnection();
-            conn.ConnectionString = WebConfigurationManager.ConnectionStrings["JacksParkingConnectionString"].ConnectionString;
+            string serverDBName = "JacksParkingDB";
+            string serverName = "192.168.1.183";
+            string serverUsername = "JPAdmin";
+            string serverPassword = "lumberjacks";
 
-            SqlCommand cmd = new SqlCommand();
-            cmd.CommandText = "SELECT x_location FROM ParkingLots WHERE ParkingLots.ID = " + id;
+            string sqlconn = $"Data Source ={serverName}; InitialCatalog = {serverDBName}; User ID = {serverUsername}; Password = {serverPassword}; Trusted_Connection = true";
+            SqlConnection sqlConnection = new SqlConnection();
+            sqlConnection.open();
 
-            SqlDataReader sdr = cmd.ExecuteReader();
+            string queryString = "SELECT x_location FROM dbo.ParkingLots WHERE dbo.ParkingLots.ID = " + id;
+            SqlCommand command = new SqlCommand(queryString, sqlConnection);
+            SqlDataReader sdr = command.ExecuteReader();
 
             Object returnVal = sdr.HasRows && sdr.Read() ? sdr["x_location"] : 0;
-
+            sqlConnection.close();
             return returnVal;
         }
 
         static Object getYLocation(int id)
         {
-            SqlConnection conn = new SqlConnection();
-            conn.ConnectionString = WebConfigurationManager.ConnectionStrings["JacksParkingConnectionString"].ConnectionString;
+            string serverDBName = "JacksParkingDB";
+            string serverName = "192.168.1.183";
+            string serverUsername = "JPAdmin";
+            string serverPassword = "lumberjacks";
 
-            SqlCommand cmd = new SqlCommand();
-            cmd.CommandText = "SELECT y_location FROM ParkingLots WHERE ParkingLots.ID = " + id;
+            string sqlconn = $"Data Source ={serverName}; InitialCatalog = {serverDBName}; User ID = {serverUsername}; Password = {serverPassword}; Trusted_Connection = true";
+            SqlConnection sqlConnection = new SqlConnection();
+            sqlConnection.open();
 
-            SqlDataReader sdr = cmd.ExecuteReader();
+            string queryString = "SELECT y_location FROM dbo.ParkingLots WHERE dbo.ParkingLots.ID = " + id;
+            SqlCommand command = new SqlCommand(queryString, sqlConnection);
+            SqlDataReader sdr = command.ExecuteReader();
 
             Object returnVal = sdr.HasRows && sdr.Read() ? sdr["y_location"] : 0;
-
+            sqlConnection.close();
             return returnVal;
         }
 
         static Object getTotalSpaces(int id)
         {
-            SqlConnection conn = new SqlConnection();
-            conn.ConnectionString = WebConfigurationManager.ConnectionStrings["JacksParkingConnectionString"].ConnectionString;
+            string serverDBName = "JacksParkingDB";
+            string serverName = "192.168.1.183";
+            string serverUsername = "JPAdmin";
+            string serverPassword = "lumberjacks";
 
-            SqlCommand cmd = new SqlCommand();
-            cmd.CommandText = "SELECT total_spaces FROM ParkingLots WHERE ParkingLots.ID = " + id;
+            string sqlconn = $"Data Source ={serverName}; InitialCatalog = {serverDBName}; User ID = {serverUsername}; Password = {serverPassword}; Trusted_Connection = true";
+            SqlConnection sqlConnection = new SqlConnection();
+            sqlConnection.open();
 
-            SqlDataReader sdr = cmd.ExecuteReader();
+            string queryString = "SELECT total_spaces FROM dbo.ParkingLots WHERE dbo.ParkingLots.ID = " + id;
+            SqlCommand command = new SqlCommand(queryString, sqlConnection);
+            SqlDataReader sdr = command.ExecuteReader();
 
             Object returnVal = sdr.HasRows && sdr.Read() ? sdr["total_spaces"] : 0;
-
+            sqlConnection.close();
             return returnVal;
         }
         static Object getSpacesOcc(int id)
         {
-            SqlConnection conn = new SqlConnection();
-            conn.ConnectionString = WebConfigurationManager.ConnectionStrings["JacksParkingConnectionString"].ConnectionString;
+            string serverDBName = "JacksParkingDB";
+            string serverName = "192.168.1.183";
+            string serverUsername = "JPAdmin";
+            string serverPassword = "lumberjacks";
 
-            SqlCommand cmd = new SqlCommand();
-            cmd.CommandText = "SELECT spaces_occ FROM ParkingLots WHERE ParkingLots.ID = " + id;
+            string sqlconn = $"Data Source ={serverName}; InitialCatalog = {serverDBName}; User ID = {serverUsername}; Password = {serverPassword}; Trusted_Connection = true";
+            SqlConnection sqlConnection = new SqlConnection();
+            sqlConnection.open();
 
-            SqlDataReader sdr = cmd.ExecuteReader();
+            string queryString = "SELECT spaces_occ FROM dbo.ParkingLots WHERE dbo.ParkingLots.ID = " + id;
+            SqlCommand command = new SqlCommand(queryString, sqlConnection);
+            SqlDataReader sdr = command.ExecuteReader();
 
             Object returnVal = sdr.HasRows && sdr.Read() ? sdr["spaces_occ"] : 0;
-
+            sqlConnection.close();
             return returnVal;
         }
 
         static Object getLevel(int id)
         {
-            SqlConnection conn = new SqlConnection();
-            conn.ConnectionString = WebConfigurationManager.ConnectionStrings["JacksParkingConnectionString"].ConnectionString;
+            string serverDBName = "JacksParkingDB";
+            string serverName = "192.168.1.183";
+            string serverUsername = "JPAdmin";
+            string serverPassword = "lumberjacks";
 
-            SqlCommand cmd = new SqlCommand();
-            cmd.CommandText = "SELECT Level FROM ParkingLots WHERE ParkingLots.ID = " + id;
+            string sqlconn = $"Data Source ={serverName}; InitialCatalog = {serverDBName}; User ID = {serverUsername}; Password = {serverPassword}; Trusted_Connection = true";
+            SqlConnection sqlConnection = new SqlConnection();
+            sqlConnection.open();
 
-            SqlDataReader sdr = cmd.ExecuteReader();
+            string queryString = "SELECT level FROM dbo.ParkingLots WHERE dbo.ParkingLots.ID = " + id;
+            SqlCommand command = new SqlCommand(queryString, sqlConnection);
+            SqlDataReader sdr = command.ExecuteReader();
 
             Object returnVal = sdr.HasRows && sdr.Read() ? sdr["level"] : 0;
-
+            sqlConnection.close();
             return returnVal;
         }
 
         static Object getPrimaryBuilding(int id)
         {
-            SqlConnection conn = new SqlConnection();
-            conn.ConnectionString = WebConfigurationManager.ConnectionStrings["JacksParkingConnectionString"].ConnectionString;
+            string serverDBName = "JacksParkingDB";
+            string serverName = "192.168.1.183";
+            string serverUsername = "JPAdmin";
+            string serverPassword = "lumberjacks";
 
-            SqlCommand cmd = new SqlCommand();
-            cmd.CommandText = "SELECT primary_building FROM ParkingLots WHERE ParkingLots.ID = " + id;
+            string sqlconn = $"Data Source ={serverName}; InitialCatalog = {serverDBName}; User ID = {serverUsername}; Password = {serverPassword}; Trusted_Connection = true";
+            SqlConnection sqlConnection = new SqlConnection();
+            sqlConnection.open();
 
-            SqlDataReader sdr = cmd.ExecuteReader();
+            string queryString = "SELECT primary_building FROM dbo.ParkingLots WHERE dbo.ParkingLots.ID = " + id;
+            SqlCommand command = new SqlCommand(queryString, sqlConnection);
+            SqlDataReader sdr = command.ExecuteReader();
 
             Object returnVal = sdr.HasRows && sdr.Read() ? sdr["primary_building"] : 0;
-
+            sqlConnection.close();
             return returnVal;
         }
 
         static Object getSecondaryBuilding(int id)
         {
-            SqlConnection conn = new SqlConnection();
-            conn.ConnectionString = WebConfigurationManager.ConnectionStrings["JacksParkingConnectionString"].ConnectionString;
+            string serverDBName = "JacksParkingDB";
+            string serverName = "192.168.1.183";
+            string serverUsername = "JPAdmin";
+            string serverPassword = "lumberjacks";
 
-            SqlCommand cmd = new SqlCommand();
-            cmd.CommandText = "SELECT secondary_building FROM ParkingLots WHERE ParkingLots.ID = " + id;
+            string sqlconn = $"Data Source ={serverName}; InitialCatalog = {serverDBName}; User ID = {serverUsername}; Password = {serverPassword}; Trusted_Connection = true";
+            SqlConnection sqlConnection = new SqlConnection();
+            sqlConnection.open();
 
-            SqlDataReader sdr = cmd.ExecuteReader();
+            string queryString = "SELECT secondary_building FROM dbo.ParkingLots WHERE dbo.ParkingLots.ID = " + id;
+            SqlCommand command = new SqlCommand(queryString, sqlConnection);
+            SqlDataReader sdr = command.ExecuteReader();
 
             Object returnVal = sdr.HasRows && sdr.Read() ? sdr["secondary_building"] : 0;
-
+            sqlConnection.close();
             return returnVal;
         }
 
         static Object getName(int id)
         {
-            SqlConnection conn = new SqlConnection();
-            conn.ConnectionString = WebConfigurationManager.ConnectionStrings["JacksParkingConnectionString"].ConnectionString;
+            string serverDBName = "JacksParkingDB";
+            string serverName = "192.168.1.183";
+            string serverUsername = "JPAdmin";
+            string serverPassword = "lumberjacks";
 
-            SqlCommand cmd = new SqlCommand();
-            cmd.CommandText = "SELECT name FROM ParkingLots WHERE ParkingLots.ID = " + id;
+            string sqlconn = $"Data Source ={serverName}; InitialCatalog = {serverDBName}; User ID = {serverUsername}; Password = {serverPassword}; Trusted_Connection = true";
+            SqlConnection sqlConnection = new SqlConnection();
+            sqlConnection.open();
 
-            SqlDataReader sdr = cmd.ExecuteReader();
+            string queryString = "SELECT name FROM dbo.ParkingLots WHERE dbo.ParkingLots.ID = " + id;
+            SqlCommand command = new SqlCommand(queryString, sqlConnection);
+            SqlDataReader sdr = command.ExecuteReader();
 
             Object returnVal = sdr.HasRows && sdr.Read() ? sdr["name"] : 0;
-
+            sqlConnection.close();
             return returnVal;
         }
 
         static Object getPermits(int id)
         {
-            SqlConnection conn = new SqlConnection();
-            conn.ConnectionString = WebConfigurationManager.ConnectionStrings["JacksParkingConnectionString"].ConnectionString;
+            string serverDBName = "JacksParkingDB";
+            string serverName = "192.168.1.183";
+            string serverUsername = "JPAdmin";
+            string serverPassword = "lumberjacks";
 
-            SqlCommand cmd = new SqlCommand();
-            cmd.CommandText = "SELECT permits FROM ParkingLots WHERE ParkingLots.ID = " + id;
+            string sqlconn = $"Data Source ={serverName}; InitialCatalog = {serverDBName}; User ID = {serverUsername}; Password = {serverPassword}; Trusted_Connection = true";
+            SqlConnection sqlConnection = new SqlConnection();
+            sqlConnection.open();
 
-            SqlDataReader sdr = cmd.ExecuteReader();
+            string queryString = "SELECT permits FROM dbo.ParkingLots WHERE dbo.ParkingLots.ID = " + id;
+            SqlCommand command = new SqlCommand(queryString, sqlConnection);
+            SqlDataReader sdr = command.ExecuteReader();
 
             Object returnVal = sdr.HasRows && sdr.Read() ? sdr["permits"] : 0;
-
+            sqlConnection.close();
             return returnVal;
         }
 
         static Object getSpecCase(int id)
         {
-            SqlConnection conn = new SqlConnection();
-            conn.ConnectionString = WebConfigurationManager.ConnectionStrings["JacksParkingConnectionString"].ConnectionString;
+            string serverDBName = "JacksParkingDB";
+            string serverName = "192.168.1.183";
+            string serverUsername = "JPAdmin";
+            string serverPassword = "lumberjacks";
 
-            SqlCommand cmd = new SqlCommand();
-            cmd.CommandText = "SELECT spec_case FROM ParkingLots WHERE ParkingLots.ID = " + id;
+            string sqlconn = $"Data Source ={serverName}; InitialCatalog = {serverDBName}; User ID = {serverUsername}; Password = {serverPassword}; Trusted_Connection = true";
+            SqlConnection sqlConnection = new SqlConnection();
+            sqlConnection.open();
 
-            SqlDataReader sdr = cmd.ExecuteReader();
+            string queryString = "SELECT spec_case FROM dbo.ParkingLots WHERE dbo.ParkingLots.ID = " + id;
+            SqlCommand command = new SqlCommand(queryString, sqlConnection);
+            SqlDataReader sdr = command.ExecuteReader();
 
             Object returnVal = sdr.HasRows && sdr.Read() ? sdr["spec_case"] : 0;
+            sqlConnection.close();
+            return returnVal;
+        }
 
+        static void setSpaces(int id, int newSpaces)
+        {
+            string serverDBName = "JacksParkingDB";
+            string serverName = "192.168.1.183";
+            string serverUsername = "JPAdmin";
+            string serverPassword = "lumberjacks";
+
+            string sqlconn = $"Data Source ={serverName}; InitialCatalog = {serverDBName}; User ID = {serverUsername}; Password = {serverPassword}; Trusted_Connection = true";
+            SqlConnection sqlConnection = new SqlConnection();
+            sqlConnection.open();
+
+            string queryString = "UPDATE dbo.ParkingLots SET spaces_occ = " + newSpaces " WHERE ID = " + id;
+            SqlCommand command = new SqlCommand(queryString, sqlConnection);
+            SqlDataReader sdr = command.ExecuteReader();
+
+            Object returnVal = sdr.HasRows && sdr.Read() ? sdr["spec_case"] : 0;
+            sqlConnection.close();
             return returnVal;
         }
     }
