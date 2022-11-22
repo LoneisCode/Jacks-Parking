@@ -5,23 +5,19 @@
              >
     <!--Shoutout https://www.youtube.com/@DavidOrtinau-->
     <Grid>
-    <BoxView Color="Transparent" Opacity="0" InputTransparent="True"
-            x:Name="backDrop">
-        <BoxView.GestureRecognizers>
-            <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
-        </BoxView.GestureRecognizers>
-    </BoxView>
-    <!--Botttom Widget-->
-    <Frame x:Name="WidgetBase" HeightRequest="200" VerticalOptions="End" BackgroundColor="{DynamicResource Secondary}" CornerRadius="20" >
+        <!--Botttom Widget-->
+        <Frame x:Name="WidgetBase" HeightRequest="200" VerticalOptions="End" BackgroundColor="{DynamicResource Secondary}" CornerRadius="20" Padding="5">
             <Frame.GestureRecognizers>
-                <PanGestureRecognizer PanUpdated="PanGestureRecognizer_PanUpdated"/>
+                <SwipeGestureRecognizer Direction="Down,Up" Swiped="SwipeGestureRecognizer_Swiped"/>
             </Frame.GestureRecognizers>
-            <StackLayout Orientation="Vertical" Padding="5" >
+            <StackLayout Orientation="Vertical" Spacing="10" >
+                <RoundRectangle BackgroundColor="{DynamicResource Primary}" CornerRadius="15" HeightRequest="7" WidthRequest="100"/>
                 <Label x:Name="parkingLotName" Text="LOT" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
-                <Label x:Name="SpotCount" Text="Available Spots:" FontSize="15"/>
-                <Label x:Name="Description" Text="About This Lot" FontSize="15"/>
+
+                <Label x:Name="SpotCount" Text="Available Spots: 0/0" FontSize="15" HorizontalTextAlignment="Center" FontAttributes="Bold"/>
+
+                <Label x:Name="Description" Text="About This Lot" FontSize="15" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
             </StackLayout>
-    </Frame>
-        
+        </Frame>
     </Grid>
 </ContentView>
