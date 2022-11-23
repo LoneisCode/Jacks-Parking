@@ -1117,8 +1117,6 @@ C:\Users\miste\source\repos\MauiApp1\MauiApp1\obj\Debug\net7.0-android\android\j
 C:\Users\miste\source\repos\MauiApp1\MauiApp1\obj\Debug\net7.0-android\app_shared_libraries\armeabi-v7a\libxamarin-app.so
 C:\Users\miste\source\repos\MauiApp1\MauiApp1\obj\Debug\net7.0-android\app_shared_libraries\arm64-v8a\libxamarin-app.so
 C:\Users\miste\source\repos\MauiApp1\MauiApp1\obj\Debug\net7.0-android\app_shared_libraries\x86\libxamarin-app.so
-C:\Users\Knile\LoneCodingProjects\ClassProjects\JacksParking\Jacks-Parking\MauiApp1\MauiApp1\obj\Debug\net7.0-android\android\assets\Mono.Android.dll
-C:\Users\Knile\LoneCodingProjects\ClassProjects\JacksParking\Jacks-Parking\MauiApp1\MauiApp1\obj\Debug\net7.0-android\android\bin\classes2.dex
 C:\Users\Knile\LoneCodingProjects\ClassProjects\JacksParking\Jacks-Parking\MauiApp1\MauiApp1\bin\Debug\net7.0-android\MauiApp1.runtimeconfig.json
 C:\Users\Knile\LoneCodingProjects\ClassProjects\JacksParking\Jacks-Parking\MauiApp1\MauiApp1\bin\Debug\net7.0-android\MauiApp1.dll
 C:\Users\Knile\LoneCodingProjects\ClassProjects\JacksParking\Jacks-Parking\MauiApp1\MauiApp1\bin\Debug\net7.0-android\MauiApp1.pdb
@@ -1152,6 +1150,7 @@ C:\Users\Knile\LoneCodingProjects\ClassProjects\JacksParking\Jacks-Parking\MauiA
 C:\Users\Knile\LoneCodingProjects\ClassProjects\JacksParking\Jacks-Parking\MauiApp1\MauiApp1\obj\Debug\net7.0-android\resizetizer\r\drawable-xxxhdpi\dotnet_bot.png
 C:\Users\Knile\LoneCodingProjects\ClassProjects\JacksParking\Jacks-Parking\MauiApp1\MauiApp1\obj\Debug\net7.0-android\resizetizer\r\drawable-xxxhdpi\splash.png
 C:\Users\Knile\LoneCodingProjects\ClassProjects\JacksParking\Jacks-Parking\MauiApp1\MauiApp1\obj\Debug\net7.0-android\resizetizer\r\drawable\campus_map_reduced.png
+C:\Users\Knile\LoneCodingProjects\ClassProjects\JacksParking\Jacks-Parking\MauiApp1\MauiApp1\obj\Debug\net7.0-android\resizetizer\r\drawable\car_service.png
 C:\Users\Knile\LoneCodingProjects\ClassProjects\JacksParking\Jacks-Parking\MauiApp1\MauiApp1\obj\Debug\net7.0-android\resizetizer\r\mipmap-anydpi-v26\appicon.xml
 C:\Users\Knile\LoneCodingProjects\ClassProjects\JacksParking\Jacks-Parking\MauiApp1\MauiApp1\obj\Debug\net7.0-android\resizetizer\r\mipmap-anydpi-v26\appicon_round.xml
 C:\Users\Knile\LoneCodingProjects\ClassProjects\JacksParking\Jacks-Parking\MauiApp1\MauiApp1\obj\Debug\net7.0-android\resizetizer\r\mipmap-hdpi\appicon.png
@@ -1281,6 +1280,7 @@ C:\Users\Knile\LoneCodingProjects\ClassProjects\JacksParking\Jacks-Parking\MauiA
 C:\Users\Knile\LoneCodingProjects\ClassProjects\JacksParking\Jacks-Parking\MauiApp1\MauiApp1\obj\Debug\net7.0-android\android\assets\Microsoft.VisualBasic.dll
 C:\Users\Knile\LoneCodingProjects\ClassProjects\JacksParking\Jacks-Parking\MauiApp1\MauiApp1\obj\Debug\net7.0-android\android\assets\Microsoft.Win32.Primitives.dll
 C:\Users\Knile\LoneCodingProjects\ClassProjects\JacksParking\Jacks-Parking\MauiApp1\MauiApp1\obj\Debug\net7.0-android\android\assets\Microsoft.Win32.Registry.dll
+C:\Users\Knile\LoneCodingProjects\ClassProjects\JacksParking\Jacks-Parking\MauiApp1\MauiApp1\obj\Debug\net7.0-android\android\assets\Mono.Android.dll
 C:\Users\Knile\LoneCodingProjects\ClassProjects\JacksParking\Jacks-Parking\MauiApp1\MauiApp1\obj\Debug\net7.0-android\android\assets\Mono.Android.Export.dll
 C:\Users\Knile\LoneCodingProjects\ClassProjects\JacksParking\Jacks-Parking\MauiApp1\MauiApp1\obj\Debug\net7.0-android\android\assets\Mono.Android.Export.pdb
 C:\Users\Knile\LoneCodingProjects\ClassProjects\JacksParking\Jacks-Parking\MauiApp1\MauiApp1\obj\Debug\net7.0-android\android\assets\Mono.Android.pdb
@@ -2144,6 +2144,7 @@ C:\Users\Knile\LoneCodingProjects\ClassProjects\JacksParking\Jacks-Parking\MauiA
 C:\Users\Knile\LoneCodingProjects\ClassProjects\JacksParking\Jacks-Parking\MauiApp1\MauiApp1\obj\Debug\net7.0-android\android\jni_remap.x86_64.o
 C:\Users\Knile\LoneCodingProjects\ClassProjects\JacksParking\Jacks-Parking\MauiApp1\MauiApp1\obj\Debug\net7.0-android\app_shared_libraries\x86_64\libxamarin-app.so
 C:\Users\Knile\LoneCodingProjects\ClassProjects\JacksParking\Jacks-Parking\MauiApp1\MauiApp1\obj\Debug\net7.0-android\android\bin\classes.dex
+C:\Users\Knile\LoneCodingProjects\ClassProjects\JacksParking\Jacks-Parking\MauiApp1\MauiApp1\obj\Debug\net7.0-android\android\bin\classes2.dex
 C:\Users\Knile\LoneCodingProjects\ClassProjects\JacksParking\Jacks-Parking\MauiApp1\MauiApp1\obj\Debug\net7.0-android\stamp\_CleanIntermediateIfNeeded.stamp
 C:\Users\Knile\LoneCodingProjects\ClassProjects\JacksParking\Jacks-Parking\MauiApp1\MauiApp1\obj\Debug\net7.0-android\stamp\_CompileJava.stamp
 C:\Users\Knile\LoneCodingProjects\ClassProjects\JacksParking\Jacks-Parking\MauiApp1\MauiApp1\obj\Debug\net7.0-android\stamp\_CompileToDalvik.stamp

@@ -8,7 +8,7 @@ public partial class Widget : ContentView
     }
 
     bool drawerUp = true;
-
+    
     private void SwipeGestureRecognizer_Swiped(object sender, SwipedEventArgs e)
     {
 

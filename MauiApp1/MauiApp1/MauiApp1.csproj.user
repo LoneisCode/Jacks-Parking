@@ -8,7 +8,10 @@
     <DefaultDevice>pixel_5_-_api_31</DefaultDevice>
   </PropertyGroup>
   <ItemGroup>
-    <MauiXaml Update="Widget.xaml">
+    <MauiXaml Update="LoneControls\Filter.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
+    <MauiXaml Update="LoneControls\Widget.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
   </ItemGroup>
