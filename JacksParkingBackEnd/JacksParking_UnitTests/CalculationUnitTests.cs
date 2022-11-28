@@ -1,4 +1,6 @@
 using JacksParkingBackEnd;
+using Xunit.Sdk;
+
 namespace JacksParking_UnitTests
 {
     public class CalculationUnitTests
@@ -32,8 +34,8 @@ namespace JacksParking_UnitTests
         {
             //null array input
             double[]? colorArr = null;
-            double[] actualValue = Calculations.ConfidenceInterval(colorArr);
-            Assert.Null(actualValue);
+           // double[] actualValue = Calculations.ConfidenceInterval(colorArr);
+           Assert.Throws<ArgumentNullException>(() => Calculations.ConfidenceInterval(colorArr));
         }
     }
-}
+}   

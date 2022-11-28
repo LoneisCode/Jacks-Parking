@@ -20,9 +20,8 @@ namespace JacksParkingBackEnd
             }
             catch (ArgumentNullException e)
             {
-                Console.WriteLine(e.Message);
+                throw e;
             }
-            return -1;
         }
 
         // Input: Array of Red values, Array of Blue values, or Array of Green values.
@@ -46,9 +45,9 @@ namespace JacksParkingBackEnd
             catch (ArgumentNullException e)
             {
                 Console.WriteLine("RBG array is null or value at index i is null.");
-                Console.WriteLine(e.Message);
+                throw e;
+              
             }
-            return null;
         }
     }
 }
