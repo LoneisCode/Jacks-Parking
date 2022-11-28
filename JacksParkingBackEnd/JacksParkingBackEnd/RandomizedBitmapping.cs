@@ -1,32 +1,30 @@
 ﻿using JacksParkingBackEnd;
 using System;
 using System.Drawing;
+using System.Linq;
 
 public class RandomizedBitmapping
 {
+    
     // Input: A single parking spot object.
     // Output: Red component values of the diagonal pixels.
     // Iterates over the x coordinate.
     public static double[] GetR(ParkingSpot spot, Bitmap lot)
     {
-        // TODO: Add "if" to set x and y to top or bottom left (x,y) pair coordinate.
-        // Setting the starting pixel (either top left OR bottom left).
-        // Being int, pixels will be somewhat off of diagonal but should be good enough.
-        int x = spot.GetBottomLeftX();
-        int y = spot.GetBottomLeftY();
+        int arrSize = 100;
+        // rand.Next(min, max) creates a number
+        // between min and up to but not including max
+        int maxX = spot.GetMaxX() + 1;
+        int maxY = spot.GetMaxY() + 1;
+        double[] rValues = new double[arrSize];
 
-        double[] rValues = new double[spot.GetXRange()];
-
-        for (int i = 0; i < spot.GetXRange(); i++)
+        for (int i = 0; i < arrSize; i++)
         {
+            Random randomizedCoordinate = new Random();
+            int x = randomizedCoordinate.Next(spot.GetMinX(), maxX);
+            int y = randomizedCoordinate.Next(spot.GetMinY(), maxY);
             Color c = lot.GetPixel(x, y);
             rValues[i] = c.R;
-            if (spot.GetIsTopLeft())
-                x -= 1;
-            else
-                x += 1;
-
-            y = (int)(spot.GetSlope() * x + spot.GetYIntercept());
         }
 
         return rValues;
@@ -37,23 +35,20 @@ public class RandomizedBitmapping
     // Iterates over the x coordinate.
     public static double[] GetG(ParkingSpot spot, Bitmap lot)
     {
-        // TODO: Add "if" to set x and y to top or bottom left (x,y) pair coordinate.
-        // Setting the starting pixel (either top left OR bottom left).
-        // Being int, pixels will be somewhat off of diagonal but should be good enough.
-        int x = spot.GetBottomLeftX();
-        int y = spot.GetBottomLeftY();
+        int arrSize = 100;
+        // rand.Next(min, max) creates a number
+        // between min and up to but not including max
+        int maxX = spot.GetMaxX() + 1;
+        int maxY = spot.GetMaxY() + 1;
+        double[] gValues = new double[arrSize];
 
-        double[] gValues = new double[spot.GetXRange()];
-
-        for (int i = 0; i < spot.GetXRange(); i++)
+        for (int i = 0; i < arrSize; i++)
         {
+            Random randomizedCoordinate = new Random();
+            int x = randomizedCoordinate.Next(spot.GetMinX(), maxX);
+            int y = randomizedCoordinate.Next(spot.GetMinY(), maxY);
             Color c = lot.GetPixel(x, y);
             gValues[i] = c.G;
-            if (spot.GetIsTopLeft())
-                x -= 1;
-            else
-                x += 1;
-            y = (int)(spot.GetSlope() * x + spot.GetYIntercept());
         }
 
         return gValues;
@@ -64,23 +59,20 @@ public class RandomizedBitmapping
     // Iterates over the x coordinate.
     public static double[] GetB(ParkingSpot spot, Bitmap lot)
     {
-        // TODO: Add "if" to set x and y to top or bottom left (x,y) pair coordinate.
-        // Setting the starting pixel (either top left OR bottom left).
-        // Being int, pixels will be somewhat off of diagonal but should be good enough.
-        int x = spot.GetBottomLeftX();
-        int y = spot.GetBottomLeftY();
+        int arrSize = 100;
+        // rand.Next(min, max) creates a number
+        // between min and up to but not including max
+        int maxX = spot.GetMaxX() + 1;
+        int maxY = spot.GetMaxY() + 1;
+        double[] bValues = new double[arrSize];
 
-        double[] bValues = new double[spot.GetXRange()];
-
-        for (int i = 0; i < spot.GetXRange(); i++)
+        for (int i = 0; i < arrSize; i++)
         {
+            Random randomizedCoordinate = new Random();
+            int x = randomizedCoordinate.Next(spot.GetMinX(), maxX);
+            int y = randomizedCoordinate.Next(spot.GetMinY(), maxY);
             Color c = lot.GetPixel(x, y);
             bValues[i] = c.B;
-            if (spot.GetIsTopLeft())
-                x -= 1;
-            else
-                x += 1;
-            y = (int)(spot.GetSlope() * x + spot.GetYIntercept());
         }
 
         return bValues;
