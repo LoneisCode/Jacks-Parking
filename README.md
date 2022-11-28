@@ -6,5 +6,5 @@ JacksParking will hopefully be extended to other platforms such as IOS in the fu
 
 ## Layout of Repo
 - JacksParkingBackEnd holds all of the backend components that make up the backend of this project. This inlcudes the classes ParkingLot.cs, ParkingSpot.cs, Bitmapping.cs, RandomizedBitmapping.cs, Calculations.cs, and Constants.cs.
-- MauiApp1 holds all of the frontend components <Oscar or Lone pls fill this in>
-- <Database folder name> holds <John please fill in>
+- MauiApp1 holds all of the frontend components *Oscar or Lone pls fill this in*
+- *Database folder name* holds *John please fill in*
