@@ -21,7 +21,7 @@ namespace JacksParkingBackEnd
             ParkingSpot[] vSpots = new ParkingSpot[14];
 
             vSpots[0] = new ParkingSpot(83, 322,123, 322, 35, 358, 81, 358); // Spot 1, empty || 1
-            vSpots[1] = new ParkingSpot(442, 322, 473, 322, 477, 358, 515, 358); // Spot 12, empty || 2
+            vSpots[1] = new ParkingSpot(442, 322, 472, 322, 477, 358, 515, 358); // Spot 12, empty || 2
             vSpots[2] = new ParkingSpot(150, 322, 185, 322, 123, 358, 164, 358); // Spot 3, taken
             vSpots[3] = new ParkingSpot(185, 322, 221, 322, 164, 358, 204, 358); // Spot 4, taken
             vSpots[4] = new ParkingSpot(221, 322, 252, 322, 204, 358, 244, 358); // Spot 5, taken
