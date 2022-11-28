@@ -12,7 +12,7 @@ namespace JacksParkingBackEnd
         private int length;
         private int xRange;
         private double slope;
-        private double b;
+        private double yIntercept;
         private double[] red;
         private double[] green;
         private double[] blue;
@@ -28,8 +28,8 @@ namespace JacksParkingBackEnd
             xRange = Math.Abs(topX - bottomX);
             // Distance formula
             this.length = (int)Math.Sqrt(Math.Pow((double)(topX - bottomX), 2) + Math.Pow((double)(topY - bottomY), 2)); 
-            this.slope = (topY - bottomY) / (topX - bottomX);
-            this.b = (this.topY) - (this.slope * this.topX);
+            this.slope = Math.Round(((double)topY - (double)bottomY) / ((double)topX - (double)bottomX), 7);
+            this.yIntercept = (this.topY) - (this.slope * this.topX);
             this.isTopLeft = isTopLeft;
         }
 
@@ -101,9 +101,9 @@ namespace JacksParkingBackEnd
             return this.slope;
         }
 
-        public double getB()
+        public double GetYIntercept()
         {
-            return this.b;
+            return this.yIntercept;
         }
 
     }

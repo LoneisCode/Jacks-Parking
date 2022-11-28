@@ -26,7 +26,7 @@ using System.Drawing;
                 else
                     x += 1;
 
-                y = (int)(spot.GetSlope() * x + spot.getB());
+                y = (int)(spot.GetSlope() * x + spot.GetYIntercept());
             }
 
             return rValues;
@@ -53,7 +53,7 @@ using System.Drawing;
                     x -= 1;
                 else
                     x += 1;
-                y = (int)(spot.GetSlope() * x + spot.getB());
+                y = (int)(spot.GetSlope() * x + spot.GetYIntercept());
             }
 
             return gValues;
@@ -80,7 +80,7 @@ using System.Drawing;
                     x -= 1;
                 else
                     x += 1;
-                y = (int)(spot.GetSlope() * x + spot.getB());
+                y = (int)(spot.GetSlope() * x + spot.GetYIntercept());
             }
 
             return bValues;
