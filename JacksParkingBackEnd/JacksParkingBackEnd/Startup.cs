@@ -18,13 +18,12 @@ namespace JacksParkingBackEnd
         {
             Configuration = configuration;
 
-            ParkingSpot[] vSpots = new ParkingSpot[28];
+            ParkingSpot[] vSpots = new ParkingSpot[14];
             // When filling, decide if diagonal is starting from top left or bottom left. 
             // Parking spot numbers correspond to a personal list Jessie has written. 
             // First row from the bottom up. 
             vSpots[0] = new ParkingSpot(119, 325, 35, 358, false); // Spot 1, empty || 1
             vSpots[1] = new ParkingSpot(446, 325, 515, 359, true); // Spot 12, empty || 2
-            vSpots[11] = new ParkingSpot(144, 328, 82, 358, false); // Spot 2, empty || 3
             vSpots[2] = new ParkingSpot(182, 326, 125, 358, false); // Spot 3, taken
             vSpots[3] = new ParkingSpot(217, 325, 165, 357, false); // Spot 4, taken
             vSpots[4] = new ParkingSpot(252, 324, 206, 358, false); // Spot 5, taken
@@ -34,6 +33,7 @@ namespace JacksParkingBackEnd
             vSpots[8] = new ParkingSpot(381, 324, 362, 358, false); // Spot 9, empty || 4
             vSpots[9] = new ParkingSpot(419, 319, 401, 358, false); // Spot 10, taken
             vSpots[10] = new ParkingSpot(425, 323, 376, 358, true); // Spot 11, empty || 5
+            vSpots[11] = new ParkingSpot(144, 328, 82, 358, false); // Spot 2, empty || 3
             vSpots[12] = new ParkingSpot(477, 324, 551, 358, true); // Spot 13, taken
             vSpots[13] = new ParkingSpot(518, 320, 584, 358, true); // Spot 14, taken
             // Second row from the bottom up.
@@ -52,20 +52,20 @@ namespace JacksParkingBackEnd
             vSpots[26] = new ParkingSpot(394, 275, 379, 291, false); // Spot 27, taken
             vSpots[27] = new ParkingSpot(414, 277, 405, 291, false); // Spot 28, taken
             // Third row from the bottom up. 
-            /*vSpots[28] = new ParkingSpot(132, 261, 110, 270, false); // Spot 29, empty || 8
+            vSpots[28] = new ParkingSpot(132, 261, 110, 270, false); // Spot 29, empty || 8
             vSpots[29] = new ParkingSpot(161, 256, 130, 267, false); // Spot 30, taken
             vSpots[30] = new ParkingSpot(184, 256, 152, 269, false); // Spot 31, taken
             vSpots[31] = new ParkingSpot(204, 259, 174, 269, false); // Spot 32, taken
             vSpots[32] = new ParkingSpot(222, 260, 200, 269, false); // Spot 33, taken
             vSpots[33] = new ParkingSpot(244, 260, 220, 269, false); // Spot 34, taken
             vSpots[34] = new ParkingSpot(265, 260, 241, 269, false); // Spot 35, taken
-            vSpots[35] = new ParkingSpot(284, 260, 263, 269, false); // Spot 36, empty || 9 */
-            
+            vSpots[35] = new ParkingSpot(284, 260, 263, 269, false); // Spot 36, empty || 9 
+           
 
 
 
 
-            Bitmap Village = new Bitmap(Constants.villageJPGImagePath);
+            Bitmap Village = new Bitmap("Resources/images/lot_image.jpg");
             ParkingLot village = new ParkingLot(Constants.villageJPGImagePath, vSpots, Village);
             System.Diagnostics.Debug.WriteLine(village.SpotsStatus());
 

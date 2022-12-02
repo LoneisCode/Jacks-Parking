@@ -44,9 +44,9 @@ namespace JacksParkingBackEnd
         {
             for (int i = 0; i < this.spots.Length; i++)
             {
-                spots[i].SetR(RandomizedBitmapping.GetR(spots[i], lot)); // Red
-                spots[i].SetG(RandomizedBitmapping.GetG(spots[i], lot)); // Green
-                spots[i].SetB(RandomizedBitmapping.GetB(spots[i], lot)); // Blue
+                spots[i].SetR(Bitmapping.GetR(spots[i], lot)); // Red
+                spots[i].SetG(Bitmapping.GetG(spots[i], lot)); // Green
+                spots[i].SetB(Bitmapping.GetB(spots[i], lot)); // Blue
             }
         }
 
@@ -170,8 +170,11 @@ namespace JacksParkingBackEnd
                     }
 
 
-                    if(!available)
-                        availableSpots--;                
+                    if (!available)
+                    {
+                        availableSpots--;
+                    }
+                        
                 }             
                 return availableSpots;
             }
