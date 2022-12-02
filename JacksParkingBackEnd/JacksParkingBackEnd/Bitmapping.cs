@@ -12,8 +12,8 @@ using System.Drawing;
             // TODO: Add "if" to set x and y to top or bottom left (x,y) pair coordinate.
             // Setting the starting pixel (either top left OR bottom left).
             // Being int, pixels will be somewhat off of diagonal but should be good enough.
-            int x = spot.GetBottomLeftX(); 
-            int y = spot.GetBottomLeftY();
+            int x = spot.GetBottomX(); 
+            int y = spot.GetBottomY();
 
             double[] rValues = new double[spot.GetXRange()];
 
@@ -40,8 +40,8 @@ using System.Drawing;
             // TODO: Add "if" to set x and y to top or bottom left (x,y) pair coordinate.
             // Setting the starting pixel (either top left OR bottom left).
             // Being int, pixels will be somewhat off of diagonal but should be good enough.
-            int x = spot.GetBottomLeftX(); 
-            int y = spot.GetBottomLeftY();
+            int x = spot.GetBottomX(); 
+            int y = spot.GetBottomY();
 
             double[] gValues = new double[spot.GetXRange()];
 
@@ -67,8 +67,8 @@ using System.Drawing;
             // TODO: Add "if" to set x and y to top or bottom left (x,y) pair coordinate.
             // Setting the starting pixel (either top left OR bottom left).
             // Being int, pixels will be somewhat off of diagonal but should be good enough.
-            int x = spot.GetBottomLeftX(); 
-            int y = spot.GetBottomLeftY();
+            int x = spot.GetBottomX(); 
+            int y = spot.GetBottomY();
 
             double[] bValues = new double[spot.GetXRange()];
 
