@@ -1,1 +1,0 @@
-C:\Users\Knile\LoneCodingProjects\ClassProjects\JacksParking\Jacks-Parking\MauiApp1\MauiApp1\MauiApp1.csproj;x64

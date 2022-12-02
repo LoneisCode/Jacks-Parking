@@ -12,7 +12,7 @@
 		<ImplicitUsings>enable</ImplicitUsings>
 
 		<!-- Display name -->
-		<ApplicationTitle>MauiApp1</ApplicationTitle>
+		<ApplicationTitle>Jacks Parking</ApplicationTitle>
 
 		<!-- App Identifier -->
 		<ApplicationId>com.companyname.mauiapp1</ApplicationId>
@@ -35,9 +35,9 @@
 		<MauiIcon Include="Resources\AppIcon\appicon.svg" ForegroundFile="Resources\AppIcon\appiconfg.svg" Color="#512BD4" />
 
 		<!-- Splash Screen -->
-		<MauiSplashScreen Include="Resources\Splash\splash.svg" Color="#512BD4" BaseSize="128,128" />
+  
 
-		<!-- Images -->
+    <!-- Images -->
 		<MauiImage Include="Resources\Images\*" />
 		<MauiImage Update="Resources\Images\routes.png" BaseSize="168,208" />
 
@@ -51,7 +51,6 @@
 	<ItemGroup>
 	  <None Remove="Resources\AppIcon\stephen.png" />
 	  <None Remove="Resources\Images\routes.PNG" />
-	  <None Remove="Resources\Splash\stephen.png" />
 	</ItemGroup>
 
 	<ItemGroup>

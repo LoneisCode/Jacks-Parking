@@ -18,6 +18,7 @@ public partial class MainPage : ContentPage
         var sfa = new Location(31.6216, -94.6466);
         var villageLot = new Location(31.616634, -94.650789);
         MapSpan mapSpan = MapSpan.FromCenterAndRadius(sfa, Distance.FromKilometers(3));
+        mapSpan = mapSpan.WithZoom(5);
         map.MoveToRegion(mapSpan);
         map.Pins.Add(new Pin
         {
