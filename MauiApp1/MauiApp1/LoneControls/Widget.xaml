@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.Widget"
+             >
+    <!--Shoutout https://www.youtube.com/@DavidOrtinau-->
+    <Grid>
+        <!--Botttom Widget-->
+        <Frame x:Name="WidgetBase" HeightRequest="200" VerticalOptions="End" BackgroundColor="{DynamicResource Secondary}" CornerRadius="20" Padding="5">
+            <Frame.GestureRecognizers>
+                <SwipeGestureRecognizer Direction="Down,Up" Swiped="SwipeGestureRecognizer_Swiped"/>
+            </Frame.GestureRecognizers>
+            <StackLayout Orientation="Vertical" Spacing="10" >
+                <RoundRectangle BackgroundColor="{DynamicResource Primary}" CornerRadius="15" HeightRequest="7" WidthRequest="100"/>
+                <Label x:Name="parkingLotName" Text="Lot" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
+
+                <Label x:Name="SpotCount" Text="Available Spots:" FontSize="15" HorizontalTextAlignment="Center" FontAttributes="Bold"/>
+
+                <Label x:Name="Description" Text="About This Lot:" FontSize="15" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
+            </StackLayout>
+        </Frame>
+    </Grid>
+</ContentView>
