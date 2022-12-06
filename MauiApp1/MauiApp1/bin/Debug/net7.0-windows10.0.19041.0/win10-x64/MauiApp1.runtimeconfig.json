@@ -4,7 +4,11 @@
     "includedFrameworks": [
       {
         "name": "Microsoft.NETCore.App",
+<<<<<<< Updated upstream
         "version": "7.0.0-rc.2.22472.3"
+=======
+        "version": "7.0.0"
+>>>>>>> Stashed changes
       },
       {
         "name": "Microsoft.Maui.Core",

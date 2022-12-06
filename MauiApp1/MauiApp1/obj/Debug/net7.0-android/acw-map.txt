@@ -76,6 +76,12 @@ microsoft.maui.platform.MauiScrollView;crc6452ffdc5b34af3a0f.MauiScrollView
 Microsoft.Maui.Platform.MauiHorizontalScrollView, Microsoft.Maui;crc6452ffdc5b34af3a0f.MauiHorizontalScrollView
 Microsoft.Maui.Platform.MauiHorizontalScrollView;crc6452ffdc5b34af3a0f.MauiHorizontalScrollView
 microsoft.maui.platform.MauiHorizontalScrollView;crc6452ffdc5b34af3a0f.MauiHorizontalScrollView
+<<<<<<< Updated upstream
+=======
+Microsoft.Maui.Platform.MauiSearchView, Microsoft.Maui;crc6452ffdc5b34af3a0f.MauiSearchView
+Microsoft.Maui.Platform.MauiSearchView;crc6452ffdc5b34af3a0f.MauiSearchView
+microsoft.maui.platform.MauiSearchView;crc6452ffdc5b34af3a0f.MauiSearchView
+>>>>>>> Stashed changes
 Microsoft.Maui.Platform.MauiShapeView, Microsoft.Maui;crc6452ffdc5b34af3a0f.MauiShapeView
 Microsoft.Maui.Platform.MauiShapeView;crc6452ffdc5b34af3a0f.MauiShapeView
 microsoft.maui.platform.MauiShapeView;crc6452ffdc5b34af3a0f.MauiShapeView
@@ -670,6 +676,12 @@ microsoft.maui.controls.platform.MauiViewPager;crc64338477404e88479c.MauiViewPag
 Microsoft.Maui.Controls.Platform.MultiPageFragmentStateAdapter`1, Microsoft.Maui.Controls;crc64338477404e88479c.MultiPageFragmentStateAdapter_1
 Microsoft.Maui.Controls.Platform.MultiPageFragmentStateAdapter`1;crc64338477404e88479c.MultiPageFragmentStateAdapter_1
 microsoft.maui.controls.platform.MultiPageFragmentStateAdapter_1;crc64338477404e88479c.MultiPageFragmentStateAdapter_1
+<<<<<<< Updated upstream
+=======
+Microsoft.Maui.Controls.Platform.PointerGestureHandler, Microsoft.Maui.Controls;crc64338477404e88479c.PointerGestureHandler
+Microsoft.Maui.Controls.Platform.PointerGestureHandler;crc64338477404e88479c.PointerGestureHandler
+microsoft.maui.controls.platform.PointerGestureHandler;crc64338477404e88479c.PointerGestureHandler
+>>>>>>> Stashed changes
 Microsoft.Maui.Controls.Platform.TapAndPanGestureDetector, Microsoft.Maui.Controls;crc64338477404e88479c.TapAndPanGestureDetector
 Microsoft.Maui.Controls.Platform.TapAndPanGestureDetector;crc64338477404e88479c.TapAndPanGestureDetector
 microsoft.maui.controls.platform.TapAndPanGestureDetector;crc64338477404e88479c.TapAndPanGestureDetector

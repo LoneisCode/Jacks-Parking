@@ -7,8 +7,11 @@
 	<string>OpenSans-Regular.ttf</string>
 	<string>OpenSans-Semibold.ttf</string>
   </array>
+<<<<<<< Updated upstream
   <key>UILaunchStoryboardName</key>
   <string>MauiSplash</string>
+=======
+>>>>>>> Stashed changes
 
 </dict>
 </plist>

@@ -46,14 +46,22 @@ appiconWideTile.scale-125.png
 appiconWideTile.scale-150.png
 appiconWideTile.scale-200.png
 appiconWideTile.scale-400.png
+<<<<<<< Updated upstream
+=======
+campus_map_reduced.scale-100.png
+car_service.scale-100.png
+>>>>>>> Stashed changes
 dotnet_bot.scale-100.png
 dotnet_bot.scale-125.png
 dotnet_bot.scale-150.png
 dotnet_bot.scale-200.png
 dotnet_bot.scale-400.png
+<<<<<<< Updated upstream
 splashSplashScreen.scale-100.png
 splashSplashScreen.scale-125.png
 splashSplashScreen.scale-150.png
 splashSplashScreen.scale-200.png
 splashSplashScreen.scale-400.png
+=======
+>>>>>>> Stashed changes
 AboutAssets.txt
