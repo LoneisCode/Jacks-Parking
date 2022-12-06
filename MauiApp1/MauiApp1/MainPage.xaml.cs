@@ -5,7 +5,6 @@ namespace MauiApp1;
 
 public partial class MainPage : ContentPage
 {
-	int count = 0;
 
 	public MainPage()
 	{
@@ -16,16 +15,21 @@ public partial class MainPage : ContentPage
     {
         base.OnNavigatedTo(args);
 
-        var location = new Location(31.6216, -94.6466);
-
-        MapSpan mapSpan = MapSpan.FromCenterAndRadius(location, Distance.FromKilometers(3));
+        var sfa = new Location(31.6216, -94.6466);
+        var villageLot = new Location(31.616634, -94.650789);
+        MapSpan mapSpan = MapSpan.FromCenterAndRadius(sfa, Distance.FromKilometers(3));
+        mapSpan = mapSpan.WithZoom(5);
         map.MoveToRegion(mapSpan);
         map.Pins.Add(new Pin
         {
-            Label = "Welcome to .NET MAUI!",
-            Location = location,
+            Label = "Welcome to Jacks Parking",
+            Location = sfa,
         });
-        
+        map.Pins.Add(new Pin
+        {
+            Label = "Village Lot",
+            Location = villageLot,
+        });
     }
 
 }

@@ -269,8 +269,11 @@ C:\Users\miste\source\repos\MauiApp1\MauiApp1\obj\Debug\net7.0-ios\iossimulator-
 C:\Users\miste\source\repos\MauiApp1\MauiApp1\obj\Debug\net7.0-ios\iossimulator-x64\MauiApp1.pdb
 C:\Users\miste\source\repos\MauiApp1\MauiApp1\obj\Debug\net7.0-ios\iossimulator-x64\MauiApp1.genruntimeconfig.cache
 C:\Users\miste\source\repos\MauiApp1\MauiApp1\obj\Debug\net7.0-ios\iossimulator-x64\ref\MauiApp1.dll
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
+=======
+>>>>>>> 76c9e035af404ef901c89e665b8d652c1bd6687e
 C:\Users\Knile\LoneCodingProjects\ClassProjects\JacksParking\Jacks-Parking\MauiApp1\MauiApp1\bin\Debug\net7.0-ios\iossimulator-x64\MauiApp1.runtimeconfig.json
 C:\Users\Knile\LoneCodingProjects\ClassProjects\JacksParking\Jacks-Parking\MauiApp1\MauiApp1\bin\Debug\net7.0-ios\iossimulator-x64\MauiApp1.dll
 C:\Users\Knile\LoneCodingProjects\ClassProjects\JacksParking\Jacks-Parking\MauiApp1\MauiApp1\bin\Debug\net7.0-ios\iossimulator-x64\MauiApp1.pdb
@@ -545,6 +548,7 @@ C:\Users\Knile\LoneCodingProjects\ClassProjects\JacksParking\Jacks-Parking\MauiA
 C:\Users\Knile\LoneCodingProjects\ClassProjects\JacksParking\Jacks-Parking\MauiApp1\MauiApp1\obj\Debug\net7.0-ios\iossimulator-x64\MauiApp1.pdb
 C:\Users\Knile\LoneCodingProjects\ClassProjects\JacksParking\Jacks-Parking\MauiApp1\MauiApp1\obj\Debug\net7.0-ios\iossimulator-x64\MauiApp1.genruntimeconfig.cache
 C:\Users\Knile\LoneCodingProjects\ClassProjects\JacksParking\Jacks-Parking\MauiApp1\MauiApp1\obj\Debug\net7.0-ios\iossimulator-x64\ref\MauiApp1.dll
+<<<<<<< HEAD
 C:\Users\miste\Documents\GitHub\Jacks-Parking\MauiApp1\MauiApp1\bin\Debug\net7.0-ios\iossimulator-x64\MauiApp1.runtimeconfig.json
 C:\Users\miste\Documents\GitHub\Jacks-Parking\MauiApp1\MauiApp1\bin\Debug\net7.0-ios\iossimulator-x64\MauiApp1.dll
 C:\Users\miste\Documents\GitHub\Jacks-Parking\MauiApp1\MauiApp1\bin\Debug\net7.0-ios\iossimulator-x64\MauiApp1.pdb
@@ -812,3 +816,5 @@ C:\Users\miste\Documents\GitHub\Jacks-Parking\MauiApp1\MauiApp1\obj\Debug\net7.0
 C:\Users\miste\Documents\GitHub\Jacks-Parking\MauiApp1\MauiApp1\obj\Debug\net7.0-ios\iossimulator-x64\MauiApp1.genruntimeconfig.cache
 C:\Users\miste\Documents\GitHub\Jacks-Parking\MauiApp1\MauiApp1\obj\Debug\net7.0-ios\iossimulator-x64\ref\MauiApp1.dll
 >>>>>>> Stashed changes
+=======
+>>>>>>> 76c9e035af404ef901c89e665b8d652c1bd6687e

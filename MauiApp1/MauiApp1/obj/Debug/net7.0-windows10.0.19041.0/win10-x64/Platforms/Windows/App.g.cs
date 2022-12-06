@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 ﻿#pragma checksum "C:\Users\miste\source\repos\MauiApp1\MauiApp1\Platforms\Windows\App.xaml" "{8829d00f-11b8-4213-878b-770e8597ac16}" "D35248EAECD85E25EEAE5F559D304E60E11CF7A79FDDFDBDFA3AEFD1E018D596"
 =======
@@ -19,3 +20,5 @@ namespace MauiApp1.WinUI
     }
 }
 
+=======
+>>>>>>> 76c9e035af404ef901c89e665b8d652c1bd6687e
