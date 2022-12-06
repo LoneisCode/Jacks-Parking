@@ -177,9 +177,9 @@ namespace JacksParkingBackEnd
                         
                 }
 
-                SQLiteConnection sqlite_conn;
+                /*SQLiteConnection sqlite_conn;
                 sqlite_conn = Accessdb.CreateConnection();
-                Accessdb.UpdateSpacesOccupied(sqlite_conn, availableSpots, 1);
+                Accessdb.UpdateSpacesOccupied(sqlite_conn, availableSpots, 1);*/
 
                 return availableSpots;
             }
