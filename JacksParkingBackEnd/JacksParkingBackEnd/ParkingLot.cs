@@ -1,6 +1,10 @@
 ﻿using System.Drawing;
 using System.Linq;
 using System;
+using System.Data.SQLite;
+using System.Text;
+using System.Threading.Tasks;
+
 
 namespace JacksParkingBackEnd
 {
@@ -174,7 +178,9 @@ namespace JacksParkingBackEnd
                     {
                         availableSpots--;
                     }
-                        
+                    SQLiteConnection sqlite_conn;
+                    sqlite_conn = Accessdbbe.CreateConnection();
+                    Accessdbbe.UpdateSpacesOccupied(sqlite_conn, availableSpots, 1);
                 }             
                 return availableSpots;
             }

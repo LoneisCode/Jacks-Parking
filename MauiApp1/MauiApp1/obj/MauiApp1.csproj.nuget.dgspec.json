@@ -61,6 +61,10 @@
         "net7.0-android33.0": {
           "targetAlias": "net7.0-android",
           "dependencies": {
+            "Microsoft.Data.Sqlite.Core": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
             "Microsoft.Extensions.Configuration": {
               "target": "Package",
               "version": "[7.0.0, )",
@@ -97,6 +101,14 @@
             "Microsoft.Maui.Maps": {
               "target": "Package",
               "version": "[7.0.49, )"
+            },
+            "SQLite": {
+              "target": "Package",
+              "version": "[3.13.0, )"
+            },
+            "SQLitePCLRaw.core": {
+              "target": "Package",
+              "version": "[2.1.3, )"
             },
             "SQLitePCLRaw.provider.dynamic_cdecl": {
               "target": "Package",
@@ -199,6 +211,10 @@
         "net7.0-ios16.0": {
           "targetAlias": "net7.0-ios",
           "dependencies": {
+            "Microsoft.Data.Sqlite.Core": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
             "Microsoft.Extensions.Configuration": {
               "target": "Package",
               "version": "[7.0.0, )",
@@ -235,6 +251,14 @@
             "Microsoft.Maui.Maps": {
               "target": "Package",
               "version": "[7.0.49, )"
+            },
+            "SQLite": {
+              "target": "Package",
+              "version": "[3.13.0, )"
+            },
+            "SQLitePCLRaw.core": {
+              "target": "Package",
+              "version": "[2.1.3, )"
             },
             "SQLitePCLRaw.provider.dynamic_cdecl": {
               "target": "Package",
@@ -282,6 +306,10 @@
         "net7.0-maccatalyst15.4": {
           "targetAlias": "net7.0-maccatalyst",
           "dependencies": {
+            "Microsoft.Data.Sqlite.Core": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
             "Microsoft.Extensions.Configuration": {
               "target": "Package",
               "version": "[7.0.0, )",
@@ -318,6 +346,14 @@
             "Microsoft.Maui.Maps": {
               "target": "Package",
               "version": "[7.0.49, )"
+            },
+            "SQLite": {
+              "target": "Package",
+              "version": "[3.13.0, )"
+            },
+            "SQLitePCLRaw.core": {
+              "target": "Package",
+              "version": "[2.1.3, )"
             },
             "SQLitePCLRaw.provider.dynamic_cdecl": {
               "target": "Package",
@@ -366,6 +402,10 @@
         "net7.0-windows10.0.19041": {
           "targetAlias": "net7.0-windows10.0.19041.0",
           "dependencies": {
+            "Microsoft.Data.Sqlite.Core": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
             "Microsoft.Extensions.Configuration": {
               "target": "Package",
               "version": "[7.0.0, )",
@@ -418,6 +458,14 @@
               "target": "Package",
               "version": "[1.1.5, )",
               "autoReferenced": true
+            },
+            "SQLite": {
+              "target": "Package",
+              "version": "[3.13.0, )"
+            },
+            "SQLitePCLRaw.core": {
+              "target": "Package",
+              "version": "[2.1.3, )"
             },
             "SQLitePCLRaw.provider.dynamic_cdecl": {
               "target": "Package",

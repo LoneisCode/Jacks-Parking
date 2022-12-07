@@ -58,9 +58,15 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <PackageReference Include="Microsoft.Data.Sqlite.Core" Version="7.0.0" />
 	  <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="7.0.0" />
 	  <PackageReference Include="Microsoft.Maui.Controls.Maps" Version="7.0.49" />
 	  <PackageReference Include="Microsoft.Maui.Maps" Version="7.0.49" />
+	  <PackageReference Include="SQLite" Version="3.13.0" />
+	  <PackageReference Include="sqlite-net" Version="1.6.292" />
+	  <PackageReference Include="sqlite-net-pcl" Version="1.9.141-beta" />
+	  <PackageReference Include="SQLitePCLRaw.core" Version="2.1.3" />
+	  <PackageReference Include="SQLitePCLRaw.provider.dynamic_cdecl" Version="2.1.3" />
 	</ItemGroup>
 
 	<ItemGroup>

@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "RYQj8tI5G1UU3RJuzV32Pq1wlO8mYCIvs8iKkuhXRcAmEDk9gMPQNxujPMxje4H9GZh49q1brOZl0A35ZOpXJA==",
+  "dgSpecHash": "pqaghSyp5MuDb9jEm7E4tlVokXKC3MjeCqOdlDOaERDGJCP2rV+al34FSPqQPSOWw9sdPez+nd0ECKZyxwduxQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\workm\\Source\\Repos\\Jacks-Parking\\MauiApp1\\MauiApp1\\MauiApp1.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\workm\\.nuget\\packages\\googlegson\\2.9.1\\googlegson.2.9.1.nupkg.sha512",
+    "C:\\Users\\workm\\.nuget\\packages\\microsoft.data.sqlite.core\\7.0.0\\microsoft.data.sqlite.core.7.0.0.nupkg.sha512",
     "C:\\Users\\workm\\.nuget\\packages\\microsoft.extensions.configuration\\7.0.0\\microsoft.extensions.configuration.7.0.0.nupkg.sha512",
     "C:\\Users\\workm\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\7.0.0\\microsoft.extensions.configuration.abstractions.7.0.0.nupkg.sha512",
     "C:\\Users\\workm\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\7.0.0\\microsoft.extensions.dependencyinjection.7.0.0.nupkg.sha512",
@@ -21,6 +22,7 @@
     "C:\\Users\\workm\\.nuget\\packages\\microsoft.maui.maps\\7.0.49\\microsoft.maui.maps.7.0.49.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages\\microsoft.windows.sdk.buildtools\\10.0.22621.1\\microsoft.windows.sdk.buildtools.10.0.22621.1.nupkg.sha512",
     "C:\\Users\\workm\\.nuget\\packages\\microsoft.windowsappsdk\\1.1.5\\microsoft.windowsappsdk.1.1.5.nupkg.sha512",
+    "C:\\Users\\workm\\.nuget\\packages\\sqlite\\3.13.0\\sqlite.3.13.0.nupkg.sha512",
     "C:\\Users\\workm\\.nuget\\packages\\sqlite-net\\1.6.292\\sqlite-net.1.6.292.nupkg.sha512",
     "C:\\Users\\workm\\.nuget\\packages\\sqlite-net-pcl\\1.9.141-beta\\sqlite-net-pcl.1.9.141-beta.nupkg.sha512",
     "C:\\Users\\workm\\.nuget\\packages\\sqlitepclraw.bundle_green\\2.1.2\\sqlitepclraw.bundle_green.2.1.2.nupkg.sha512",
