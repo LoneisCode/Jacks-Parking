@@ -42,6 +42,7 @@ namespace Accessdbfe
             while (sqlite_datareader.Read())
             {
                 myreader += sqlite_datareader.GetString(0);
+                myreader += "|";
             }
             conn.Close();
             return myreader;
