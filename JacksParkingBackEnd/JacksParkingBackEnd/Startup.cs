@@ -17,6 +17,8 @@ namespace JacksParkingBackEnd
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
+            
+            //Initializing database
 
             ParkingSpot[] vSpots = new ParkingSpot[41];
             // When filling, decide if diagonal is starting from top left or bottom left. 

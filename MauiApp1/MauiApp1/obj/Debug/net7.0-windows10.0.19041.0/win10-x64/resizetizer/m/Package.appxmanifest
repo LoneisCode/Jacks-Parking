@@ -2,7 +2,11 @@
 <Package xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10" xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10" xmlns:rescap="http://schemas.microsoft.com/appx/manifest/foundation/windows10/restrictedcapabilities" IgnorableNamespaces="uap rescap">
   <Identity Name="c818dc6c-18fa-4562-97f3-1695abc0828c" Publisher="CN=User Name" Version="1.0.0.1" />
   <Properties>
+<<<<<<< HEAD
     <DisplayName>MauiApp1</DisplayName>
+=======
+    <DisplayName>Jacks Parking</DisplayName>
+>>>>>>> fa628ade15ddd64ca95585d7a9f006bd82e0059f
     <PublisherDisplayName>User Name</PublisherDisplayName>
     <Logo>appiconStoreLogo.png</Logo>
   </Properties>
@@ -15,14 +19,23 @@
   </Resources>
   <Applications>
     <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="$targetentrypoint$">
+<<<<<<< HEAD
       <uap:VisualElements DisplayName="MauiApp1" Description="MauiApp1" Square150x150Logo="appiconMediumTile.png" Square44x44Logo="appiconLogo.png" BackgroundColor="transparent">
         <uap:DefaultTile Square71x71Logo="appiconSmallTile.png" Wide310x150Logo="appiconWideTile.png" Square310x310Logo="appiconLargeTile.png" ShortName="MauiApp1">
+=======
+      <uap:VisualElements DisplayName="Jacks Parking" Description="Jacks Parking" Square150x150Logo="appiconMediumTile.png" Square44x44Logo="appiconLogo.png" BackgroundColor="transparent">
+        <uap:DefaultTile Square71x71Logo="appiconSmallTile.png" Wide310x150Logo="appiconWideTile.png" Square310x310Logo="appiconLargeTile.png" ShortName="Jacks Parking">
+>>>>>>> fa628ade15ddd64ca95585d7a9f006bd82e0059f
           <uap:ShowNameOnTiles>
             <uap:ShowOn Tile="square150x150Logo" />
             <uap:ShowOn Tile="wide310x150Logo" />
           </uap:ShowNameOnTiles>
         </uap:DefaultTile>
+<<<<<<< HEAD
         <uap:SplashScreen Image="splashSplashScreen.png" />
+=======
+        <uap:SplashScreen Image="$placeholder$.png" />
+>>>>>>> fa628ade15ddd64ca95585d7a9f006bd82e0059f
       </uap:VisualElements>
     </Application>
   </Applications>
