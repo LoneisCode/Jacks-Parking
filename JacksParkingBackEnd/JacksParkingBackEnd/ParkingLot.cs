@@ -138,9 +138,9 @@ namespace JacksParkingBackEnd
 
                         if ((meanR > lowerBoundR2) && (meanR < upperBoundR2))
                         {
-                            System.Diagnostics.Debug.WriteLine("red is not in the bounds");
                             available = true;
                         }
+
                     }
 
                     // Check if R value average is similar to G value for an 
@@ -152,8 +152,7 @@ namespace JacksParkingBackEnd
                         available = false;
 
                         if ((meanG > lowerBoundG2) && (meanG < upperBoundG2))
-                        {
-                            System.Diagnostics.Debug.WriteLine("green is not in the bounds");
+                        {                    
                             available = true;
                         }
                     }
@@ -168,7 +167,6 @@ namespace JacksParkingBackEnd
 
                         if ((meanB > lowerBoundB2) && (meanB < upperBoundB2))
                         {
-                            System.Diagnostics.Debug.WriteLine("blue is not in the bounds");
                             available = true;
                         }
                     }
@@ -178,10 +176,20 @@ namespace JacksParkingBackEnd
                     {
                         availableSpots--;
                     }
+<<<<<<< HEAD
                     SQLiteConnection sqlite_conn;
                     sqlite_conn = Accessdbbe.CreateConnection();
                     Accessdbbe.UpdateSpacesOccupied(sqlite_conn, availableSpots, 1);
                 }             
+=======
+                        
+                }
+
+                /*SQLiteConnection sqlite_conn;
+                sqlite_conn = Accessdb.CreateConnection();
+                Accessdb.UpdateSpacesOccupied(sqlite_conn, availableSpots, 1);*/
+
+>>>>>>> e7825a6aa733a1795e6b1e13e7757e6cc4aedbc1
                 return availableSpots;
             }
             catch (ArgumentNullException e)

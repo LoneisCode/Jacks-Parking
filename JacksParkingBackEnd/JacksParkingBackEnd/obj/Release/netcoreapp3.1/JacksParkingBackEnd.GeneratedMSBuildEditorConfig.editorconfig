@@ -1,3 +1,7 @@
 is_global = true
 build_property.RootNamespace = JacksParkingBackEnd
+<<<<<<< HEAD
 build_property.ProjectDir = C:\Users\workm\source\repos\Jacks-Parking\JacksParkingBackEnd\JacksParkingBackEnd\
+=======
+build_property.ProjectDir = C:\Users\glenn\source\repos\Jacks-Parking\JacksParkingBackEnd\JacksParkingBackEnd\
+>>>>>>> e7825a6aa733a1795e6b1e13e7757e6cc4aedbc1
