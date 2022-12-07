@@ -1,6 +1,10 @@
 ﻿using System.Drawing;
 using System.Linq;
 using System;
+using System.Data.SQLite;
+using System.Text;
+using System.Threading.Tasks;
+
 
 namespace JacksParkingBackEnd
 {
@@ -172,6 +176,12 @@ namespace JacksParkingBackEnd
                     {
                         availableSpots--;
                     }
+<<<<<<< HEAD
+                    SQLiteConnection sqlite_conn;
+                    sqlite_conn = Accessdbbe.CreateConnection();
+                    Accessdbbe.UpdateSpacesOccupied(sqlite_conn, availableSpots, 1);
+                }             
+=======
                         
                 }
 
@@ -179,6 +189,7 @@ namespace JacksParkingBackEnd
                 sqlite_conn = Accessdb.CreateConnection();
                 Accessdb.UpdateSpacesOccupied(sqlite_conn, availableSpots, 1);*/
 
+>>>>>>> e7825a6aa733a1795e6b1e13e7757e6cc4aedbc1
                 return availableSpots;
             }
             catch (ArgumentNullException e)
