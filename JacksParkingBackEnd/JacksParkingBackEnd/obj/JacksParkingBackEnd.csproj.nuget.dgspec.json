@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\glenn\\source\\repos\\Jacks-Parking\\JacksParkingBackEnd\\JacksParkingBackEnd\\JacksParkingBackEnd.csproj": {}
+    "C:\\Users\\Lone\\LoneCodingProjects\\ClassProjects\\Jacks-Parking\\JacksParkingBackEnd\\JacksParkingBackEnd\\JacksParkingBackEnd.csproj": {}
   },
   "projects": {
-    "C:\\Users\\glenn\\source\\repos\\Jacks-Parking\\JacksParkingBackEnd\\JacksParkingBackEnd\\JacksParkingBackEnd.csproj": {
+    "C:\\Users\\Lone\\LoneCodingProjects\\ClassProjects\\Jacks-Parking\\JacksParkingBackEnd\\JacksParkingBackEnd\\JacksParkingBackEnd.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\glenn\\source\\repos\\Jacks-Parking\\JacksParkingBackEnd\\JacksParkingBackEnd\\JacksParkingBackEnd.csproj",
+        "projectUniqueName": "C:\\Users\\Lone\\LoneCodingProjects\\ClassProjects\\Jacks-Parking\\JacksParkingBackEnd\\JacksParkingBackEnd\\JacksParkingBackEnd.csproj",
         "projectName": "JacksParkingBackEnd",
-        "projectPath": "C:\\Users\\glenn\\source\\repos\\Jacks-Parking\\JacksParkingBackEnd\\JacksParkingBackEnd\\JacksParkingBackEnd.csproj",
-        "packagesPath": "C:\\Users\\glenn\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\glenn\\source\\repos\\Jacks-Parking\\JacksParkingBackEnd\\JacksParkingBackEnd\\obj\\",
+        "projectPath": "C:\\Users\\Lone\\LoneCodingProjects\\ClassProjects\\Jacks-Parking\\JacksParkingBackEnd\\JacksParkingBackEnd\\JacksParkingBackEnd.csproj",
+        "packagesPath": "C:\\Users\\Lone\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Lone\\LoneCodingProjects\\ClassProjects\\Jacks-Parking\\JacksParkingBackEnd\\JacksParkingBackEnd\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\glenn\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Lone\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -69,6 +69,24 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[3.1.10, 3.1.10]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[3.1.31, 3.1.31]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[3.1.0, 3.1.0]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[3.1.0, 3.1.0]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -77,7 +95,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

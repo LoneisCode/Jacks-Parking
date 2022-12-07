@@ -1,13 +1,17 @@
 {
   "version": 2,
-  "dgSpecHash": "4gRnKIcDlrPQfCTKsj+5CatDsTTNqz7ou8dJPxrwxCp8TUicTyFbZDVLN6mbCLVxYXqf0bvXRNhkJz1Ea3TEGA==",
+  "dgSpecHash": "+Ruv1ormZxidrhtTbuspb4yQ1Q318JHgEyX0qBdtr2HS6WFfxGn3gg40iqCVDLEJ7BiVSfj1hRuVSxQnvjrT8A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\glenn\\source\\repos\\Jacks-Parking\\JacksParkingBackEnd\\JacksParkingBackEnd\\JacksParkingBackEnd.csproj",
+  "projectFilePath": "C:\\Users\\Lone\\LoneCodingProjects\\ClassProjects\\Jacks-Parking\\JacksParkingBackEnd\\JacksParkingBackEnd\\JacksParkingBackEnd.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\glenn\\.nuget\\packages\\microsoft.maui.dependencies\\6.0.541\\microsoft.maui.dependencies.6.0.541.nupkg.sha512",
-    "C:\\Users\\glenn\\.nuget\\packages\\microsoft.maui.extensions\\6.0.541\\microsoft.maui.extensions.6.0.541.nupkg.sha512",
-    "C:\\Users\\glenn\\.nuget\\packages\\microsoft.win32.systemevents\\6.0.0\\microsoft.win32.systemevents.6.0.0.nupkg.sha512",
-    "C:\\Users\\glenn\\.nuget\\packages\\system.drawing.common\\6.0.0\\system.drawing.common.6.0.0.nupkg.sha512"
+    "C:\\Users\\Lone\\.nuget\\packages\\microsoft.maui.dependencies\\6.0.541\\microsoft.maui.dependencies.6.0.541.nupkg.sha512",
+    "C:\\Users\\Lone\\.nuget\\packages\\microsoft.maui.extensions\\6.0.541\\microsoft.maui.extensions.6.0.541.nupkg.sha512",
+    "C:\\Users\\Lone\\.nuget\\packages\\microsoft.win32.systemevents\\6.0.0\\microsoft.win32.systemevents.6.0.0.nupkg.sha512",
+    "C:\\Users\\Lone\\.nuget\\packages\\system.drawing.common\\6.0.0\\system.drawing.common.6.0.0.nupkg.sha512",
+    "C:\\Users\\Lone\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\3.1.0\\microsoft.windowsdesktop.app.ref.3.1.0.nupkg.sha512",
+    "C:\\Users\\Lone\\.nuget\\packages\\microsoft.netcore.app.ref\\3.1.0\\microsoft.netcore.app.ref.3.1.0.nupkg.sha512",
+    "C:\\Users\\Lone\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.10\\microsoft.aspnetcore.app.ref.3.1.10.nupkg.sha512",
+    "C:\\Users\\Lone\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.31\\microsoft.netcore.app.host.win-x64.3.1.31.nupkg.sha512"
   ],
   "logs": []
 }
