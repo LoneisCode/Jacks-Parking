@@ -21,6 +21,11 @@ namespace JacksParkingBackEnd
         private double[] confidenceIntGreen2;
         private double[] confidenceIntBlue2;
 
+        // Empty spot confidence intervals for shadows
+        private double[] confidenceIntRed3;
+        private double[] confidenceIntGreen3;
+        private double[] confidenceIntBlue3;
+
         // Constructor 
         public ParkingLot(string imagePath, ParkingSpot[] spots, Bitmap lot)
         {
@@ -37,6 +42,9 @@ namespace JacksParkingBackEnd
             this.confidenceIntRed2 = Calculations.ConfidenceInterval(spots[1].GetRed());
             this.confidenceIntGreen2 = Calculations.ConfidenceInterval(spots[1].GetGreen());
             this.confidenceIntBlue2 = Calculations.ConfidenceInterval(spots[1].GetBlue());
+            this.confidenceIntRed3 = Calculations.ConfidenceInterval(spots[2].GetRed());
+            this.confidenceIntGreen3 = Calculations.ConfidenceInterval(spots[2].GetGreen());
+            this.confidenceIntBlue3 = Calculations.ConfidenceInterval(spots[2].GetBlue());
         }
 
         // For each parking spot, get the red, green, and blue component values.
@@ -124,6 +132,14 @@ namespace JacksParkingBackEnd
                     double lowerBoundB2 = confidenceIntBlue2[0];
                     double upperBoundB2 = confidenceIntBlue2[1];
 
+                    // Second empty spot with all shade.
+                    double lowerBoundR3 = confidenceIntRed3[0];
+                    double upperBoundR3 = confidenceIntRed3[1];
+                    double lowerBoundG3 = confidenceIntGreen3[0];
+                    double upperBoundG3 = confidenceIntGreen3[1];
+                    double lowerBoundB3 = confidenceIntBlue3[0];
+                    double upperBoundB3 = confidenceIntBlue3[1];
+
                     // Check if R value average is similar to R value for an 
                     // empty spot with sun and shade. If is out of bounds, 
                     // set availability to false, but double check by comparing
@@ -134,7 +150,10 @@ namespace JacksParkingBackEnd
 
                         if ((meanR > lowerBoundR2) && (meanR < upperBoundR2))
                         {
-                            System.Diagnostics.Debug.WriteLine("red is not in the bounds");
+                            available = true;
+                        }
+                        if ((meanR > lowerBoundR3) && (meanR < upperBoundR3))
+                        {
                             available = true;
                         }
                     }
@@ -148,8 +167,11 @@ namespace JacksParkingBackEnd
                         available = false;
 
                         if ((meanG > lowerBoundG2) && (meanG < upperBoundG2))
+                        {                    
+                            available = true;
+                        }
+                        if ((meanG > lowerBoundG3) && (meanG < upperBoundG3))
                         {
-                            System.Diagnostics.Debug.WriteLine("green is not in the bounds");
                             available = true;
                         }
                     }
@@ -164,7 +186,10 @@ namespace JacksParkingBackEnd
 
                         if ((meanB > lowerBoundB2) && (meanB < upperBoundB2))
                         {
-                            System.Diagnostics.Debug.WriteLine("blue is not in the bounds");
+                            available = true;
+                        }
+                        if ((meanB > lowerBoundB3) && (meanB < upperBoundB3))
+                        {
                             available = true;
                         }
                     }
