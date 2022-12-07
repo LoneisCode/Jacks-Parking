@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\workm\\Source\\Repos\\Jacks-Parking\\JacksParkingBackEnd\\JacksParkingBackEnd\\JacksParkingBackEnd.csproj": {}
+    "C:\\Users\\workm\\source\\repos\\Jacks-Parking\\JacksParkingBackEnd\\JacksParkingBackEnd\\JacksParkingBackEnd.csproj": {}
   },
   "projects": {
-    "C:\\Users\\workm\\Source\\Repos\\Jacks-Parking\\JacksParkingBackEnd\\JacksParkingBackEnd\\JacksParkingBackEnd.csproj": {
+    "C:\\Users\\workm\\source\\repos\\Jacks-Parking\\JacksParkingBackEnd\\JacksParkingBackEnd\\JacksParkingBackEnd.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\workm\\Source\\Repos\\Jacks-Parking\\JacksParkingBackEnd\\JacksParkingBackEnd\\JacksParkingBackEnd.csproj",
+        "projectUniqueName": "C:\\Users\\workm\\source\\repos\\Jacks-Parking\\JacksParkingBackEnd\\JacksParkingBackEnd\\JacksParkingBackEnd.csproj",
         "projectName": "JacksParkingBackEnd",
-        "projectPath": "C:\\Users\\workm\\Source\\Repos\\Jacks-Parking\\JacksParkingBackEnd\\JacksParkingBackEnd\\JacksParkingBackEnd.csproj",
+        "projectPath": "C:\\Users\\workm\\source\\repos\\Jacks-Parking\\JacksParkingBackEnd\\JacksParkingBackEnd\\JacksParkingBackEnd.csproj",
         "packagesPath": "C:\\Users\\workm\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\workm\\Source\\Repos\\Jacks-Parking\\JacksParkingBackEnd\\JacksParkingBackEnd\\obj\\",
+        "outputPath": "C:\\Users\\workm\\source\\repos\\Jacks-Parking\\JacksParkingBackEnd\\JacksParkingBackEnd\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "UUUh0ehN9M8kZYnZ9OprktGMPcxZtCySkG+PIIzZY4iqYwCjfTTSpNBXMpNrwIEMa8wluC1KJd8FU0vNLoWr0w==",
+  "dgSpecHash": "sy8dgIJWHzHK3wOC75P/Jhc7Ke/yGu355raV5Ox2u7Cs+s77tX8lkV5pZ1whE3Q7q/4UHZHJQI0SpvXa7RsVQA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\workm\\Source\\Repos\\Jacks-Parking\\JacksParkingBackEnd\\JacksParkingBackEnd\\JacksParkingBackEnd.csproj",
+  "projectFilePath": "C:\\Users\\workm\\source\\repos\\Jacks-Parking\\JacksParkingBackEnd\\JacksParkingBackEnd\\JacksParkingBackEnd.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\workm\\.nuget\\packages\\entityframework\\6.4.4\\entityframework.6.4.4.nupkg.sha512",
     "C:\\Users\\workm\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
