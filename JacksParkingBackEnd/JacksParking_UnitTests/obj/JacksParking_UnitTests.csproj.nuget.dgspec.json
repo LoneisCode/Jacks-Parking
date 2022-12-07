@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\glenn\\source\\repos\\Jacks-Parking\\JacksParkingBackEnd\\JacksParking_UnitTests\\JacksParking_UnitTests.csproj": {}
+    "C:\\Users\\workm\\source\\repos\\Jacks-Parking\\JacksParkingBackEnd\\JacksParking_UnitTests\\JacksParking_UnitTests.csproj": {}
   },
   "projects": {
-    "C:\\Users\\glenn\\source\\repos\\Jacks-Parking\\JacksParkingBackEnd\\JacksParkingBackEnd\\JacksParkingBackEnd.csproj": {
+    "C:\\Users\\workm\\source\\repos\\Jacks-Parking\\JacksParkingBackEnd\\JacksParkingBackEnd\\JacksParkingBackEnd.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\glenn\\source\\repos\\Jacks-Parking\\JacksParkingBackEnd\\JacksParkingBackEnd\\JacksParkingBackEnd.csproj",
+        "projectUniqueName": "C:\\Users\\workm\\source\\repos\\Jacks-Parking\\JacksParkingBackEnd\\JacksParkingBackEnd\\JacksParkingBackEnd.csproj",
         "projectName": "JacksParkingBackEnd",
-        "projectPath": "C:\\Users\\glenn\\source\\repos\\Jacks-Parking\\JacksParkingBackEnd\\JacksParkingBackEnd\\JacksParkingBackEnd.csproj",
-        "packagesPath": "C:\\Users\\glenn\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\glenn\\source\\repos\\Jacks-Parking\\JacksParkingBackEnd\\JacksParkingBackEnd\\obj\\",
+        "projectPath": "C:\\Users\\workm\\source\\repos\\Jacks-Parking\\JacksParkingBackEnd\\JacksParkingBackEnd\\JacksParkingBackEnd.csproj",
+        "packagesPath": "C:\\Users\\workm\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\workm\\source\\repos\\Jacks-Parking\\JacksParkingBackEnd\\JacksParkingBackEnd\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\glenn\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\workm\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -53,9 +53,25 @@
               "target": "Package",
               "version": "[6.0.541, )"
             },
+            "SQLitePCLRaw.provider.dynamic_cdecl": {
+              "target": "Package",
+              "version": "[2.1.3, )"
+            },
+            "System.Data.SQLite": {
+              "target": "Package",
+              "version": "[1.0.117, )"
+            },
             "System.Drawing.Common": {
               "target": "Package",
               "version": "[6.0.0, )"
+            },
+            "sqlite-net": {
+              "target": "Package",
+              "version": "[1.6.292, )"
+            },
+            "sqlite-net-pcl": {
+              "target": "Package",
+              "version": "[1.8.116, )"
             }
           },
           "imports": [
@@ -77,24 +93,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\glenn\\source\\repos\\Jacks-Parking\\JacksParkingBackEnd\\JacksParking_UnitTests\\JacksParking_UnitTests.csproj": {
+    "C:\\Users\\workm\\source\\repos\\Jacks-Parking\\JacksParkingBackEnd\\JacksParking_UnitTests\\JacksParking_UnitTests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\glenn\\source\\repos\\Jacks-Parking\\JacksParkingBackEnd\\JacksParking_UnitTests\\JacksParking_UnitTests.csproj",
+        "projectUniqueName": "C:\\Users\\workm\\source\\repos\\Jacks-Parking\\JacksParkingBackEnd\\JacksParking_UnitTests\\JacksParking_UnitTests.csproj",
         "projectName": "JacksParking_UnitTests",
-        "projectPath": "C:\\Users\\glenn\\source\\repos\\Jacks-Parking\\JacksParkingBackEnd\\JacksParking_UnitTests\\JacksParking_UnitTests.csproj",
-        "packagesPath": "C:\\Users\\glenn\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\glenn\\source\\repos\\Jacks-Parking\\JacksParkingBackEnd\\JacksParking_UnitTests\\obj\\",
+        "projectPath": "C:\\Users\\workm\\source\\repos\\Jacks-Parking\\JacksParkingBackEnd\\JacksParking_UnitTests\\JacksParking_UnitTests.csproj",
+        "packagesPath": "C:\\Users\\workm\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\workm\\Source\\Repos\\Jacks-Parking\\JacksParkingBackEnd\\JacksParking_UnitTests\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\glenn\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\workm\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -110,8 +126,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\glenn\\source\\repos\\Jacks-Parking\\JacksParkingBackEnd\\JacksParkingBackEnd\\JacksParkingBackEnd.csproj": {
-                "projectPath": "C:\\Users\\glenn\\source\\repos\\Jacks-Parking\\JacksParkingBackEnd\\JacksParkingBackEnd\\JacksParkingBackEnd.csproj"
+              "C:\\Users\\workm\\source\\repos\\Jacks-Parking\\JacksParkingBackEnd\\JacksParkingBackEnd\\JacksParkingBackEnd.csproj": {
+                "projectPath": "C:\\Users\\workm\\source\\repos\\Jacks-Parking\\JacksParkingBackEnd\\JacksParkingBackEnd\\JacksParkingBackEnd.csproj"
               }
             }
           }
@@ -163,7 +179,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }
