@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 int attr action 0x0
 int attr data 0x0
 int attr dataPattern 0x0
@@ -15,3 +16,5 @@ int[] styleable NavHost { 0x0 }
 int styleable NavHost_navGraph 0
 int[] styleable NavInclude { 0x0 }
 int styleable NavInclude_graph 0
+=======
+>>>>>>> Stashed changes

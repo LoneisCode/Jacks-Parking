@@ -1,3 +1,7 @@
 is_global = true
 build_property.RootNamespace = JacksParkingBackEnd
+<<<<<<< Updated upstream
 build_property.ProjectDir = C:\Users\glenn\source\repos\Jacks-Parking\JacksParkingBackEnd\JacksParkingBackEnd\
+=======
+build_property.ProjectDir = C:\Users\miste\Documents\GitHub\Jacks-Parking\JacksParkingBackEnd\JacksParkingBackEnd\
+>>>>>>> Stashed changes

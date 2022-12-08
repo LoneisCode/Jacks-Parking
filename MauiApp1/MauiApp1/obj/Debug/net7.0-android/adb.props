@@ -1,2 +1,6 @@
+<<<<<<< Updated upstream
 AdbTarget=-s emulator-5556
+=======
+AdbTarget=-s emulator-5554
+>>>>>>> Stashed changes
 AdbOptions=

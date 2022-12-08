@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream:MauiApp1/MauiApp1/obj/Debug/net7.0-android/lp/120/jl/proguard.txt
 # Copyright (C) 2017 The Android Open Source Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,4 +16,12 @@
 # Keep a field in transition that is used to keep a reference to weakly-referenced object
 -keepclassmembers class androidx.transition.ChangeBounds$* extends android.animation.AnimatorListenerAdapter {
   androidx.transition.ChangeBounds$ViewBounds mViewBounds;
+=======
+-keepclassmembers,allowobfuscation class * extends androidx.lifecycle.ViewModel {
+    <init>(androidx.lifecycle.SavedStateHandle);
+}
+
+-keepclassmembers,allowobfuscation class * extends androidx.lifecycle.AndroidViewModel {
+    <init>(android.app.Application,androidx.lifecycle.SavedStateHandle);
+>>>>>>> Stashed changes:MauiApp1/MauiApp1/obj/Debug/net7.0-android/lp/109/jl/proguard.txt
 }

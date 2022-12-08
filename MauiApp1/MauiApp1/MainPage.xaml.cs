@@ -1,19 +1,26 @@
 ﻿using Microsoft.Maui.Controls.Maps;
 using Microsoft.Maui.Maps;
+using Microsoft.Data.Sqlite;
 
 namespace MauiApp1;
 
 public partial class MainPage : ContentPage
 {
-
+    
 	public MainPage()
 	{
 		InitializeComponent();
+        
 	}
 
     protected override void OnNavigatedTo(NavigatedToEventArgs args)
     {
         base.OnNavigatedTo(args);
+
+        SqliteConnection sqliteConn;
+        sqliteConn = Accessdbfe.CreateConnection();
+        sqliteConn.Open();
+        string output = Accessdbfe.ReadData(sqliteConn, 1);
 
         var sfa = new Location(31.6216, -94.6466);
         var villageLot = new Location(31.616634, -94.650789);

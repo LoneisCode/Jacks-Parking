@@ -7,4 +7,8 @@ build_property.InvariantGlobalization =
 build_property.PlatformNeutralAssembly = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = JacksParking_UnitTests
+<<<<<<< Updated upstream
 build_property.ProjectDir = C:\Users\glenn\source\repos\Jacks-Parking\JacksParkingBackEnd\JacksParking_UnitTests\
+=======
+build_property.ProjectDir = C:\Users\miste\Documents\GitHub\Jacks-Parking\JacksParkingBackEnd\JacksParking_UnitTests\
+>>>>>>> Stashed changes

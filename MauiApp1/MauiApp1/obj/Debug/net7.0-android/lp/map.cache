@@ -12,6 +12,8 @@ GoogleGson.dll
 Microsoft.Maui.Controls.Maps.dll
 Microsoft.Maui.Graphics.dll
 Microsoft.Maui.Maps.dll
+SQLitePCLRaw.batteries_v2.dll
+SQLitePCLRaw.lib.e_sqlite3.android.dll
 Xamarin.Android.Glide.Annotations.dll
 Xamarin.Android.Glide.DiskLruCache.dll
 Xamarin.Android.Glide.dll
@@ -162,6 +164,7 @@ glide.aar
 GoogleGson.aar
 Microsoft.Maui.Controls.Maps.aar
 Microsoft.Maui.Maps.aar
+SQLitePCLRaw.lib.e_sqlite3.android.aar
 Xamarin.Google.Crypto.Tink.Android.aar
 play-services-base.aar
 play-services-basement.aar
