@@ -15,6 +15,7 @@ templatesTest/
 *.user
 *.userosscache
 *.sln.docstates
+*.vsidx 
 
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
