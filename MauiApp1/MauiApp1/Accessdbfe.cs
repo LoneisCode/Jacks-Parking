@@ -6,18 +6,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Accessdbfe
+namespace MauiApp1
 {
     public class Accessdbfe
     {
-        static SqliteConnection CreateConnection()
+        public static SqliteConnection CreateConnection()
         {
             SqliteConnection sqlite_conn;
 
-            string currentDirectory = Directory.GetCurrentDirectory();
-            string backDirectory = currentDirectory.Replace("MauiApp1", "");
+           
             sqlite_conn = new SqliteConnection("Data Source =" +
-                Path.Combine(backDirectory, "JacksParkingSQLiteDB.db") + ";Version=3;New=True;Compress=True;");
+                Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData),"JacksParkingSQLiteDB.db"));
 
             try
             {
