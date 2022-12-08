@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\buildMultiTargeting\JacksParkingBackEnd.props" />
-</Project>
