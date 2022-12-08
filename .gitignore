@@ -1,0 +1,6 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/MauiApp1/.vs/MauiApp1/FileContentIndex/6fecb935-8724-4b56-a49e-09bc29af1572.vsidx
+*.vsidx
