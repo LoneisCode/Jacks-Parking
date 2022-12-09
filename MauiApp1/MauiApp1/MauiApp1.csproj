@@ -49,8 +49,13 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <None Remove="JacksParkingSQLiteDB.db" />
 	  <None Remove="Resources\AppIcon\stephen.png" />
 	  <None Remove="Resources\Images\routes.PNG" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <EmbeddedResource Include="JacksParkingSQLiteDB.db" />
 	</ItemGroup>
 
 	<ItemGroup>

@@ -14,19 +14,8 @@ namespace MauiApp1
         {
             SqliteConnection sqlite_conn;
 
-            // string currentDirectory = Directory.GetCurrentDirectory();
-            //string backDirectory = currentDirectory.Replace("MauiApp1", "");
-            sqlite_conn = new SqliteConnection("Data Source =" +
-                Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "JacksParkingSQLiteDB.db"));
-
-            try
-            {
-                sqlite_conn.Open();
-            }
-            catch(Exception ex)
-            {
-
-            }
+            sqlite_conn = new SqliteConnection("Data Source =" + Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "JacksParkingSQLiteDB.db"));
+            
             return sqlite_conn;
         }
 
@@ -36,7 +25,7 @@ namespace MauiApp1
             SqliteCommand sqlite_cmd;
             sqlite_cmd = conn.CreateCommand();
             sqlite_cmd.CommandText = $"SELECT * FROM ParkingLots WHERE ID = {ID};";
-
+            conn.Open();
             sqlite_datareader = sqlite_cmd.ExecuteReader();
             string myreader = "";
             while (sqlite_datareader.Read())
