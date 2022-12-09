@@ -12,11 +12,10 @@
             </Frame.GestureRecognizers>
             <StackLayout Orientation="Vertical" Spacing="10" >
                 <RoundRectangle BackgroundColor="{DynamicResource Primary}" CornerRadius="15" HeightRequest="7" WidthRequest="100"/>
-                <Label x:Name="parkingLotName" Text="Lot" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
+                <Label x:Name="parkingLotName" Text="Lot"  FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center" />
 
                 <Label x:Name="SpotCount" Text="Available Spots:" FontSize="15" HorizontalTextAlignment="Center" FontAttributes="Bold"/>
 
-                <Label x:Name="Description" Text="About This Lot:" FontSize="15" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
             </StackLayout>
         </Frame>
     </Grid>

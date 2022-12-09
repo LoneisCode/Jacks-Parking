@@ -5,6 +5,10 @@ public partial class Widget : ContentView
     public Widget()
     {
         InitializeComponent();
+        string[] output = Accessdbfe.ReadData(Accessdbfe.CreateConnection(), 1);
+        parkingLotName.Text =  output[7];
+        string prevCounttxt = SpotCount.Text;
+        SpotCount.Text = prevCounttxt + output[3];
     }
 
     bool drawerUp = true;
@@ -25,5 +29,6 @@ public partial class Widget : ContentView
            
 
     }
+
 
 }

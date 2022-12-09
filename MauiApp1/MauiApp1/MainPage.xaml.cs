@@ -1,4 +1,5 @@
-﻿using Microsoft.Data.Sqlite;
+﻿
+using Microsoft.Data.Sqlite;
 using Microsoft.Maui.Controls.Maps;
 using Microsoft.Maui.Maps;
 using System.Reflection;
@@ -11,9 +12,7 @@ public partial class MainPage : ContentPage
 	public MainPage()
 	{
 		InitializeComponent();
-
-        string[] output = Accessdbfe.ReadData(Accessdbfe.CreateConnection(), 1);
-      
+ 
 	}
 
     protected override void OnNavigatedTo(NavigatedToEventArgs args)
@@ -36,6 +35,7 @@ public partial class MainPage : ContentPage
             Label = "Village Lot",
             Location = villageLot,
         });
+        
     }
 
 }

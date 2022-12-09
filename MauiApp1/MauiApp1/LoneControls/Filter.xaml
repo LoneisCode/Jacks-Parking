@@ -17,6 +17,7 @@
                 TranslationY="58"
                 HorizontalOptions="End"
                 BackgroundColor="{DynamicResource Secondary}"
+                TextColor="Black"
                 IsVisible="false"
          />
     </Grid>
