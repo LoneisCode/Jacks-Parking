@@ -12,20 +12,7 @@ public partial class MainPage : ContentPage
 	{
 		InitializeComponent();
 
-        //TODO only do this when app first runs 
-        /* var assembly = IntrospectionExtensions.GetTypeInfo(typeof(App)).Assembly;
-         using (Stream stream =
-                assembly.GetManifestResourceStream("MauiApp1.JacksParkingSQLiteDB.db")) {
-             using (MemoryStream memoryStream = new MemoryStream()) {
-                 stream.CopyTo(memoryStream);
-
-                 File.WriteAllBytes(Accessdbfe.CreateConnection(), memoryStream.ToArray());
-             }
-         }*/
-
-        string output = Accessdbfe.ReadData(Accessdbfe.CreateConnection(), 1);
-        
-        //System.WriteLine(output);
+        string[] output = Accessdbfe.ReadData(Accessdbfe.CreateConnection(), 1);
       
 	}
 
