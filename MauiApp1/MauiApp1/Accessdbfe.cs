@@ -28,10 +28,11 @@ namespace MauiApp1
             conn.Open();
             sqlite_datareader = sqlite_cmd.ExecuteReader();
             string myreader = "";
-            while (sqlite_datareader.Read())
+            string[] dbData = new string[10];
+        
+            for(int i = 1; i <= 10; i++)
             {
-                myreader += sqlite_datareader.GetString(0);
-                myreader += "|";
+              dbData[i - 1] = sqlite_datareader.GetString(i);
             }
             conn.Close();
             return myreader;
